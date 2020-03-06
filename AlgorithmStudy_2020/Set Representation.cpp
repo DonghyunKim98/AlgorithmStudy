@@ -25,5 +25,5 @@ int main() {
 		if (x & (1 << i)) cout << i << " ";
 	}
 
-	cout << "git hub commit test " << endl;
+	cout << "git hub commit test12 " << endl;
 }
