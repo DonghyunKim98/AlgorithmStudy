@@ -142,10 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Permuation.cpp" />
+    <ClCompile Include="Set Operation.cpp" />
     <ClCompile Include="Set Representation.cpp" />
     <ClCompile Include="Subset.cpp" />
     <ClCompile Include="4QueensProblem.cpp" />
     <ClCompile Include="Bitmask.cpp" />
+    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

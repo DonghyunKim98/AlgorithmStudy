@@ -45,5 +45,11 @@
     <ClCompile Include="Set Representation.cpp">
       <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
     </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Set Operation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
