@@ -147,7 +147,7 @@
     <ClCompile Include="Subset.cpp" />
     <ClCompile Include="4QueensProblem.cpp" />
     <ClCompile Include="Bitmask.cpp" />
-    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="MaximumSubarraySum.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

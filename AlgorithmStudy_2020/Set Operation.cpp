@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 #include <intrin.h>
 
@@ -86,5 +86,6 @@ int main() {
 			b++;
 		} while (b = (b - x) & x);
 		*/
-	}
+/*	}
 }
+*/

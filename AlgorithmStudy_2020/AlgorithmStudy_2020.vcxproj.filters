@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\BackJoon Problem">
       <UniqueIdentifier>{e6adceb1-e292-4786-acf3-851a8210393b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Book\Chap03_Efficiency">
+      <UniqueIdentifier>{2e3296ca-37cf-46e7-bae0-48c12d0354a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -45,11 +48,11 @@
     <ClCompile Include="Set Representation.cpp">
       <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Set Operation.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumSubarraySum.cpp">
+      <Filter>소스 파일\Book\Chap03_Efficiency</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
