@@ -141,13 +141,15 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Permuation.cpp" />
-    <ClCompile Include="Set Operation.cpp" />
-    <ClCompile Include="Set Representation.cpp" />
-    <ClCompile Include="Subset.cpp" />
-    <ClCompile Include="4QueensProblem.cpp" />
-    <ClCompile Include="Bitmask.cpp" />
-    <ClCompile Include="MaximumSubarraySum.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4QueensProblem.h" />
+    <ClInclude Include="Bitmask.h" />
+    <ClInclude Include="Permutation.h" />
+    <ClInclude Include="Setoperation.h" />
+    <ClInclude Include="SetRepresentation.h" />
+    <ClInclude Include="MaximumSubarraySum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

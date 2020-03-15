@@ -1,22 +1,23 @@
-/*#include <iostream>
+#include <iostream>
 #include <vector>
+#include <intrin.h>
 using namespace std;
 
-int main() {
-	int n= 0;
-	int x= 0;
+int Subset() {
+	int n = 0;
+	int x = 0;
 	char temp;
 	vector<int> vc;
 	cout << "집합에 포함될 원소를 입력하세요 (0~31), 하나를 입력했으면 스페이스바를 누르고 다 입력했으면 엔터를 누르세요 :";
 	while (cin >> temp) {
-		if (temp = '\n') break;
-		else if (temp = ' ') continue;
+		if (temp == '\n') break;
+		else if (temp == ' ') continue;
 		else {
 			vc.push_back(int(temp));
 		}
 	}
 
-	for (int i = 0; i < vc.size() ; i++) {
+	for (int i = 0; i < vc.size(); i++) {
 		x |= (1 << vc[i]);
 	}
 	cout << "원소의 개수: " << __popcnt(x) << endl; // GNU 컴파일러에선 __builtin_popcount()로!
@@ -25,4 +26,3 @@ int main() {
 		if (x & (1 << i)) cout << i << " ";
 	}
 }
-*/

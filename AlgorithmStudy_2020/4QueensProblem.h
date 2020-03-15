@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 using namespace std;
 //해의 개수를 새는 value
@@ -17,7 +17,7 @@ int* diag1 = new int[6]{ 0, };
 int* diag2 = new int[6]{ 0, };
 //Problem을 푸는 함수
 void search(int);
-int main() {
+int FourQueensProblem() {
 	//기본 초기화
 	n = 4;
 	Count = 0;
@@ -45,6 +45,6 @@ void search(int y) {
 				 2) 0이면 갈수 없고 (queen이 공격할수있는 곳) 1이면 갈 수 있다는 것도 정확히 이해 X
 				 3) 배열을 동적으로 할당했을때 아무것도 초기화하지 않으면 모든 element에 주소값이 할당됨
 				   -> 그래서 전체 배열을 0으로 할당을 해야했음.
-			     4)  diag1 과 diag2의 경우 index가 n만큼이 아님.... index가 항상 n까지만 있다고 생각 X!
+				 4)  diag1 과 diag2의 경우 index가 n만큼이 아님.... index가 항상 n까지만 있다고 생각 X!
 	Algorithm Point : Backtracking의 기본!! 유망하다면 가고 (기존 퀸들이 공격 X) 유망하지 않다면 안가고(기존 퀸들이 공격)
 */

@@ -13,46 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Book">
-      <UniqueIdentifier>{922fc1c5-61e8-4157-964d-42dcf1b6a32d}</UniqueIdentifier>
+    <Filter Include="헤더 파일\BackJoonProblem">
+      <UniqueIdentifier>{6ed5d3e5-bb9c-47bf-a070-89178293745a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Book\Chap02_Programming_Techniques">
-      <UniqueIdentifier>{38f8d263-db3d-4c7b-add6-9ebb830f3dc9}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Book">
+      <UniqueIdentifier>{4af75afb-e7d0-436a-a3f0-71bb7bd246f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Book\Chap02_Programming_Techniques\BackTracking">
-      <UniqueIdentifier>{381a8c4f-e942-4b5c-8873-32849b8d07c3}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Book\Chap03">
+      <UniqueIdentifier>{2a3f3772-9f7c-44db-9f00-d6ebf01c2153}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\BackJoon Problem">
-      <UniqueIdentifier>{e6adceb1-e292-4786-acf3-851a8210393b}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Book\Chap02">
+      <UniqueIdentifier>{f62a9c62-cf5b-45cf-8b27-e94dbfc4749f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Book\Chap03_Efficiency">
-      <UniqueIdentifier>{2e3296ca-37cf-46e7-bae0-48c12d0354a4}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Book\Chap02\BackTracking">
+      <UniqueIdentifier>{44f3cbab-403b-44c7-90cd-b5f0d4443bbc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Subset.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Permuation.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
-    </ClCompile>
-    <ClCompile Include="4QueensProblem.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques\BackTracking</Filter>
-    </ClCompile>
-    <ClCompile Include="Bitmask.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
-    </ClCompile>
-    <ClCompile Include="Set Representation.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
-    </ClCompile>
-    <ClCompile Include="Set Operation.cpp">
-      <Filter>소스 파일\Book\Chap02_Programming_Techniques</Filter>
-    </ClCompile>
-    <ClCompile Include="MaximumSubarraySum.cpp">
-      <Filter>소스 파일\Book\Chap03_Efficiency</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Setoperation.h">
+      <Filter>헤더 파일\Book\Chap02</Filter>
+    </ClInclude>
+    <ClInclude Include="4QueensProblem.h">
+      <Filter>헤더 파일\Book\Chap02\BackTracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmask.h">
+      <Filter>헤더 파일\Book\Chap02</Filter>
+    </ClInclude>
+    <ClInclude Include="Permutation.h">
+      <Filter>헤더 파일\Book\Chap02</Filter>
+    </ClInclude>
+    <ClInclude Include="SetRepresentation.h">
+      <Filter>헤더 파일\Book\Chap02</Filter>
+    </ClInclude>
+    <ClInclude Include="MaximumSubarraySum.h">
+      <Filter>헤더 파일\Book\Chap03</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

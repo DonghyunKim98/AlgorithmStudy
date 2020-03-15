@@ -5,7 +5,7 @@ using namespace std;
 template <class T>
 T max(T a, T b);
 
-int main() {
+int MaximumSubarraySum() {
 	int n;
 	cout << "배열의 원소의 개수를 입력하세요: ";
 	cin >> n;
@@ -24,7 +24,7 @@ int main() {
 		best = max(best, sum);
 	}
 
-	cout << "부분 배열의 최대 합은 " << best << "입니다"; 
+	cout << "부분 배열의 최대 합은 " << best << "입니다";
 	delete array;
 
 }
