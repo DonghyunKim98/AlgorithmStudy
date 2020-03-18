@@ -150,6 +150,10 @@
     <ClInclude Include="Setoperation.h" />
     <ClInclude Include="SetRepresentation.h" />
     <ClInclude Include="MaximumSubarraySum.h" />
+    <ClInclude Include="단어정렬.h" />
+    <ClInclude Include="보물.h" />
+    <ClInclude Include="소트인사이드.h" />
+    <ClInclude Include="수 정렬하기3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

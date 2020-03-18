@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Setoperation.h"
+#include "단어정렬.h"
 
 using namespace std;
 
 int main() {
-	SetOperation();
+	WordSort();
 	return 0;
 }

@@ -28,6 +28,9 @@
     <Filter Include="헤더 파일\Book\Chap02\BackTracking">
       <UniqueIdentifier>{44f3cbab-403b-44c7-90cd-b5f0d4443bbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\정렬문제">
+      <UniqueIdentifier>{ac015208-cf2c-4ee4-85b4-0a11ffa93ff8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -55,6 +58,18 @@
     </ClInclude>
     <ClInclude Include="MaximumSubarraySum.h">
       <Filter>헤더 파일\Book\Chap03</Filter>
+    </ClInclude>
+    <ClInclude Include="소트인사이드.h">
+      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    </ClInclude>
+    <ClInclude Include="수 정렬하기3.h">
+      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    </ClInclude>
+    <ClInclude Include="보물.h">
+      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    </ClInclude>
+    <ClInclude Include="단어정렬.h">
+      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
