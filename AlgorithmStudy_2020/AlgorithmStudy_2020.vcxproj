@@ -145,11 +145,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4QueensProblem.h" />
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="Bitmask.h" />
+    <ClInclude Include="EventScheduling.h" />
     <ClInclude Include="Permutation.h" />
     <ClInclude Include="Setoperation.h" />
     <ClInclude Include="SetRepresentation.h" />
     <ClInclude Include="MaximumSubarraySum.h" />
+    <ClInclude Include="SweepLineAlgorithmCustomer.h" />
+    <ClInclude Include="WorkAndDeadLine.h" />
+    <ClInclude Include="기계를이용해서작업처리.h" />
     <ClInclude Include="단어정렬.h" />
     <ClInclude Include="보물.h" />
     <ClInclude Include="소트인사이드.h" />

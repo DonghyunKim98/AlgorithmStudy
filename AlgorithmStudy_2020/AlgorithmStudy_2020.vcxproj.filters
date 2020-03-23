@@ -31,6 +31,9 @@
     <Filter Include="헤더 파일\BackJoonProblem\정렬문제">
       <UniqueIdentifier>{ac015208-cf2c-4ee4-85b4-0a11ffa93ff8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Book\Chap04">
+      <UniqueIdentifier>{f69b00f2-bc54-4eef-a23c-cb44c1e18b29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -70,6 +73,21 @@
     </ClInclude>
     <ClInclude Include="단어정렬.h">
       <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    </ClInclude>
+    <ClInclude Include="SweepLineAlgorithmCustomer.h">
+      <Filter>헤더 파일\Book\Chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkAndDeadLine.h">
+      <Filter>헤더 파일\Book\Chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="EventScheduling.h">
+      <Filter>헤더 파일\Book\Chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>헤더 파일\Book\Chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="기계를이용해서작업처리.h">
+      <Filter>헤더 파일\Book\Chap04</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
