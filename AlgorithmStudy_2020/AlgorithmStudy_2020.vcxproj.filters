@@ -34,6 +34,9 @@
     <Filter Include="헤더 파일\Book\Chap04">
       <UniqueIdentifier>{f69b00f2-bc54-4eef-a23c-cb44c1e18b29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\BinarySearch">
+      <UniqueIdentifier>{92fcdb99-c048-4aa5-8895-69dc0d91ccd5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -88,6 +91,12 @@
     </ClInclude>
     <ClInclude Include="기계를이용해서작업처리.h">
       <Filter>헤더 파일\Book\Chap04</Filter>
+    </ClInclude>
+    <ClInclude Include="수 찾기.h">
+      <Filter>헤더 파일\BackJoonProblem\BinarySearch</Filter>
+    </ClInclude>
+    <ClInclude Include="이항계수.h">
+      <Filter>헤더 파일\BackJoonProblem\BinarySearch</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -159,6 +159,8 @@
     <ClInclude Include="보물.h" />
     <ClInclude Include="소트인사이드.h" />
     <ClInclude Include="수 정렬하기3.h" />
+    <ClInclude Include="수 찾기.h" />
+    <ClInclude Include="이항계수.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

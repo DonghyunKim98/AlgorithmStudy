@@ -1,9 +1,9 @@
 #include <iostream>
-#include "단어정렬.h"
+#include "수 찾기.h"
 
 using namespace std;
 
 int main() {
-	WordSort();
+	SearchNumber();
 	return 0;
 }
