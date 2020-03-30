@@ -1,9 +1,8 @@
-#include <iostream>
-#include "수 찾기.h"
+#include "괄호.h"
 
 using namespace std;
 
 int main() {
-	SearchNumber();
+	ParenthesisMatching();
 	return 0;
 }

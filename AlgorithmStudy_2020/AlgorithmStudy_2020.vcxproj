@@ -154,13 +154,17 @@
     <ClInclude Include="MaximumSubarraySum.h" />
     <ClInclude Include="SweepLineAlgorithmCustomer.h" />
     <ClInclude Include="WorkAndDeadLine.h" />
+    <ClInclude Include="괄호.h" />
+    <ClInclude Include="균형잡힌 세상.h" />
     <ClInclude Include="기계를이용해서작업처리.h" />
     <ClInclude Include="단어정렬.h" />
     <ClInclude Include="보물.h" />
     <ClInclude Include="소트인사이드.h" />
     <ClInclude Include="수 정렬하기3.h" />
     <ClInclude Include="수 찾기.h" />
+    <ClInclude Include="스택.h" />
     <ClInclude Include="이항계수.h" />
+    <ClInclude Include="제로.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

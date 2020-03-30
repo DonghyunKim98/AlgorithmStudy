@@ -37,6 +37,9 @@
     <Filter Include="헤더 파일\BackJoonProblem\BinarySearch">
       <UniqueIdentifier>{92fcdb99-c048-4aa5-8895-69dc0d91ccd5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\Stack">
+      <UniqueIdentifier>{d59d8f2d-1b73-448b-97c0-1832617418bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -97,6 +100,18 @@
     </ClInclude>
     <ClInclude Include="이항계수.h">
       <Filter>헤더 파일\BackJoonProblem\BinarySearch</Filter>
+    </ClInclude>
+    <ClInclude Include="스택.h">
+      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="제로.h">
+      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="괄호.h">
+      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="균형잡힌 세상.h">
+      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
