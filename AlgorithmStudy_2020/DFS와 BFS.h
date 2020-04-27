@@ -22,7 +22,7 @@ void DFS(int s) {
 	}
 }
 
-void BFS(int x) {
+void BFS(int x) {	
 	visited[x] = true;
 	q.push(x);
 	while (!q.empty()) {
@@ -34,7 +34,7 @@ void BFS(int x) {
 			if (visited[y]) continue;
 			visited[y] = true;
 			q.push(y);
-		}
+		}	
 	}
 }
 

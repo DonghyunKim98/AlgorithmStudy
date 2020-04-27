@@ -58,6 +58,9 @@
     <Filter Include="헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29">
       <UniqueIdentifier>{bc3ba7dc-e05e-4ec8-9ef9-bfcb083d81f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\Graph\최단경로">
+      <UniqueIdentifier>{12f88a52-395c-49c7-bef2-74482e1e1f26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -186,6 +189,15 @@
       <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
     </ClInclude>
     <ClInclude Include="토마토1.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="숨바꼭질.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="벽 부수고 이동하기.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="토마토2.h">
       <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
     </ClInclude>
   </ItemGroup>
