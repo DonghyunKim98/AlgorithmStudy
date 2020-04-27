@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
+//1427번 문제 -> 맞았음!
 void SortInside() {
 	int num;
 	cin >> num;

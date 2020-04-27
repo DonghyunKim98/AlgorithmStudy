@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 
+//1920번 -> 맞았음
 using namespace std;
 bool Find(int*, int,int);
 

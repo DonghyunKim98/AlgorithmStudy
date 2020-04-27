@@ -52,6 +52,12 @@
     <Filter Include="헤더 파일\Book\Chap07-Graph">
       <UniqueIdentifier>{cfeed4f9-62e8-4a78-a489-59e09e2cc505}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\Graph">
+      <UniqueIdentifier>{c3ecefeb-98cc-4630-a49c-db18783bd0a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29">
+      <UniqueIdentifier>{bc3ba7dc-e05e-4ec8-9ef9-bfcb083d81f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
@@ -160,6 +166,27 @@
     </ClInclude>
     <ClInclude Include="그래프의 표현.h">
       <Filter>헤더 파일\Book\Chap07-Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="DFS와 BFS.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="단지번호붙이기.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="미로 탐색.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="바이러스.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="섬의 개수.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="유기농 배추.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    </ClInclude>
+    <ClInclude Include="토마토1.h">
+      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

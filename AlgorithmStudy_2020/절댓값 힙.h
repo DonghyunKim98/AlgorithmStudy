@@ -3,7 +3,7 @@
 #include <functional>
 using namespace std;
 
-//11286번 문제
+//11286번 문제 ->맞았음
 //좀 다듬을 수도 있을 것 같다. 같은 것을 하는데 if else가 복잡함
 void AbsouluteValueHeap() {
 	ios_base::sync_with_stdio(0);

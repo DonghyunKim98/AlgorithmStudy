@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//2748번 문제
+//2748번 문제 -> 맞았음
 
 void Fibonacci() {
 	ios_base::sync_with_stdio(0);

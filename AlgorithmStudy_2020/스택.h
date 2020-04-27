@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// 10828번 문제
+// 10828번 문제 ->맞았음
 
 void Stack() {
 	int N;

@@ -2,64 +2,50 @@
 
 using namespace std;
 
-//1003번 문제
+//1003번 문제 ->맞았음
+//https://hongku.tistory.com/164 의 코드. -> 표를 그리자! (점화식을 확인할 수 있는 다른 방법)
 
-//정답 출력을 위한 배열 (0과 1)
-vector<bool> result0;
-vector<bool> result1;
+//Memoization을 위한 배열 -> 모든 원소를 애초에 0으로 초기화 시킴으로써  값이 들어갔나 안들어갔나 확인하는 ready 배열이 없어도 됨
+int value[41] = { 0, };
 
-//핵심! Memoization을 위한 배열
-bool ready[1000000] = { false, };
-//이 value가 (0이 몇번쓰이는지, 1이 몇번쓰이는지, 그리고 그 값은 몇인지
-tuple<int,int,int> value[1000000];
+int Calculate(int);
 
+void Fibonacci() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	int N;
+	cin >> N;
+	//base case
+	value[0] = 0;
+	value[1] = 1;
 
-
-tuple<int,int,int> fibonacci(int n) {
-    if (n == 0) {
-        result0.push_back(true);
-    }
-    else if (n == 1) {
-        result1.push_back(true);
-    }
-    //n-1 항을 아는것은 반드시 그 이전항을 알 수밖에 없음
-    if (ready[n - 1]) {
-        value[n] = value[n - 1] + value[n - 2], ready[n] = true;
-        /*
-        get<0>(value[n]) = get<0>(value[n - 1]) + get<0>(value[n - 2]);
-        get<1>(value[n]) = get<1>(value[n - 1]) + get<1>(value[n - 2]);
-        get<2>(value[n]) = get<2>(value[n - 1]) + get<2>(value[n - 2]);
-        */
-        ready[n] = true;
-    }
-    else if (ready[n - 2]) {
-        value[n - 1] = fibonacci(n - 1), ready[n - 1] = true;
-        value[n] = value[n - 1] + value[n - 2], ready[n] = true;
-    }
-    else {
-        value[n - 1] = fibonacci(n - 1), ready[n - 1] = true;
-        value[n - 2] = fibonacci(n - 2), ready[n - 2] = true;
-        value[n] = value[n - 1] + value[n - 2];
-    }
-    return value[n];
+	for (int i = 0; i < N; i++) {
+		int temp;
+		cin >> temp;
+		if (temp == 0) cout << "1 0\n";
+		else if (temp == 1) cout << "0 1\n";
+		else {
+			Calculate(temp);
+			cout << value[temp - 1] << " " << value[temp] << "\n";
+		}
+	}
 }
 
-void FibonacciFunction() {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    int N;
-    cin >> N;
-    //단순히 주어진 피보나치 함수를 그대로 쓰면 당연히 시간오바
-    //base case 설정
-    value[0] = 0, value[1] = 1;
-    ready[0] = 0, ready[1] = 1;
-    for (int i = 0; i < N; i++) {
-        int temp;
-        cin >> temp;
-        fibonacci(temp);
-        cout << result0.size() << ' ' << result1.size();
-        result0.clear();
-        result1.clear();
-    }
-    return;
+int Calculate(int a) {
+	if (a == 0 || a == 1) return value[a];
+	else if (value[a] != 0) //이미 계산이 되었다는 의미 
+	{
+		return value[a];
+	}
+	else {
+		return value[a] =Calculate(a - 1) + Calculate(a - 2);
+	}
 }
+
+/*
+	배운점들
+	1) '규칙'을 파악하는데에는 역시 표가 좋음
+	2) Memorization을 할 때 반드시 배열 2개를 선언해서
+	하나는 value를 하나는 그 value가 채워졌는지 확인하는 boolean type의 배열을 선언할 이유는 없다
+	3) return 문에서 계산하면 코드를 1줄이라도 줄일 수 있다.
+*/

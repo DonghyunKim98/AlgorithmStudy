@@ -64,7 +64,6 @@ void AdjacencyList() {
 			int a, b, w;
 			cin >> a, b, w;
 			adj[a].push_back({b,w});
-			cout << "여기서 튕기나?" << endl;
 		}
 		cout << "주어진 그래프의 모든 위치를 출력합니다." << endl;
 

@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-//1927번 문제
+//1927번 문제 -> 맞았음
 
 void MinHeap() {
 	int N;

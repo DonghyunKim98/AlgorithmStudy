@@ -3,7 +3,7 @@
 #include <functional>
 using namespace std;
 
-//1655번 문제
+//1655번 문제 -> 맞았음
 /*
 	아이디어 -> Max heap 과 Min heap을 따로 따로 구성하자
 	Max heap에는 중앙값보다 큰 값들이

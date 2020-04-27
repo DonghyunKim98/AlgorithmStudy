@@ -1,8 +1,9 @@
-#include "그래프의 표현.h"
-
+#include "토마토1.h"
+#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	GraphRepresentation();
+	cout << Tomato;
 	return 0;
 }
