@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-//7576번 문제
+//7576번 문제 -> 풀었음
 //BFS를 이용해야 함.
 //https://sihyungyou.github.io/baekjoon-7576/ 참고
 //segment는 큐에 들어있는 좌표들이 몇 개까지 하나의 턴으로 봐야하는지 기록하는 변수
