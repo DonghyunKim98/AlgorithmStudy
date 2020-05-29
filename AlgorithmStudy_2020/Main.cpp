@@ -1,10 +1,9 @@
-#include "토마토2.h"
+#include "./header/BackJoon_Problem/BinarySearch/수 찾기.h"
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
-int main() {
-	Tomato();
+int main()
+{
+	SearchNumber();
 	return 0;
 }
