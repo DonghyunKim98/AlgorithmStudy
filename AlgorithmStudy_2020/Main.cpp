@@ -1,9 +1,8 @@
-#include "./header/BackJoon_Problem/BinarySearch/수 찾기.h"
+#include "./header/BackJOON_Problem/Graph/최단경로/최단경로.h"
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-	SearchNumber();
-	return 0;
+	ShortestPath();
 }

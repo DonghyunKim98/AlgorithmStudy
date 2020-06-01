@@ -8,32 +8,64 @@ const int INF = 2147483647;
 int V, E, K;
 vector<pair<int, int>> adj[MAX];
 
-vector<int> dijkstra(int start, int vertex) {
-	//start를 기준으로 처리
-	vector <int> distance(vertex, INF);
-	//자기 자신에게 가는 비용은 0
-	distance[start] = 0;
+vector<int> dijkstra(int start, int vertex){
+	vector<int> Distance(vertex,INF); //start를 기준으로 거리
+	Distance[start] = 0;
 
-	priority_queue<pair<int, int>> pq; //-Cost, Vertex
-	pq.push(make_pair(0, start));
-
-	while (!pq.empty()) {
+	priority_queue<pair<int,int>> pq; 
+	pq.push(make_pair(0,start));
+	
+	while(!pq.empty()){
+		int cost = -pq.top().first;
 		int curVertex = pq.top().second;
 		pq.pop();
+
+		//최소거리를 원하므로 ->proccess 대체
+		if(Distance[curVertex] <cost)
+			continue;
 		
-		for (auto u : adj[curVertex]) {
+		//neighbor 다 확인
+		for(auto u: adj[curVertex]){
 			int neighbor = u.first;
-			int neighborDistance = u.second;
-			if (distance[curVertex] + neighborDistance < distance[neighbor]) {
-				distance[neighbor] = distance[curVertex] + neighborDistance;
-				pq.push(make_pair(-distance[neighbor], neighbor));
+			int neighborDistance= cost+u.second;
+
+			//최소 경로 발견시 업데이트
+			if(Distance[neighbor]>neighborDistance){
+				Distance[neighbor] = neighborDistance;
+				//거리의 부호를 바꾸어 거리가 작은 정점부터 꺼내기
+				pq.push(make_pair(-neighborDistance,neighbor));
 			}
 		}
 	}
+	return Distance;
 }
-void ShortestPath() {
+
+void ShortestPath(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
-	cin >> V >> E;
+	cin>> V >> E;
+	cin>> K;
+	
+	V++; //정점번호 1부터 시작
+	for(int i=1; i<=E ; i++){
+		int source, destination, cost;
+		cin>> source >> destination >> cost;
+		adj[source].push_back(make_pair(destination,cost));
+	}
 
+	vector<int> result = dijkstra(K,V);
+
+	for(int i=1; i<V ; i++) {
+		if(result[i] == INF)
+			cout<<"INF\n";
+		else
+			cout<<result[i]<<"\n";
+	}
+	return;
 }
+
+/*
+	배울점
+	1) distance 자체를 넘겨줌으로 메모리를 아끼는 판단
+	2) 책 코딩이 왜 틀렸는지 생각해보자.
+*/
