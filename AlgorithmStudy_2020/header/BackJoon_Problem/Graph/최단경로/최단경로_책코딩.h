@@ -27,7 +27,7 @@ void ShortestPath() {
 	Distance[K]=0;
 	pq.push({0,K});
 	while(!pq.empty()){
-		int a=pq.top().first;
+		int a=pq.top().second;
 		pq.pop();
 		if(proccess[a]) continue;
 		proccess[a]=true;
