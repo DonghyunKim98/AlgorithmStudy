@@ -3,14 +3,14 @@
 
 //1920번 -> 맞았음
 using namespace std;
-bool Find(int*, int,int);
+bool Find(int*, int, int);
 
 void SearchNumber() {
 	int N;
 	cin >> N;
 	int* Farray = new int[N];
 	for (int i = 0; i < N; i++) {
-		int temp; 
+		int temp;
 		cin >> temp;
 		Farray[i] = temp;
 	}
@@ -26,7 +26,7 @@ void SearchNumber() {
 	sort(Farray, Farray + N);
 
 	for (int i = 0; i < M; i++) {
-		bool temp = Find(Farray, Sarray[i],N);
+		bool temp = Find(Farray, Sarray[i], N);
 		if (temp == true) cout << "1\n";
 		else cout << "0\n";
 	}
