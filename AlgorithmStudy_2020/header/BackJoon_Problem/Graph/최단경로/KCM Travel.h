@@ -4,7 +4,7 @@
 using namespace std;
 const int INF = 987654321;
 const int MAX = 100+1;
-const int MAX_COST = 10001;
+const int MAX_COST = 10000 +1;
 int T;
 int N, M, K;
 //adj[startNode] = {EndNode, weight, cost}
@@ -13,9 +13,10 @@ vector <pair<int, pair<int,int>>> adj[MAX];
 int Distance [MAX][MAX_COST];
 
 void clear(){
-    for(auto u: adj){
-        while(!u.empty())
-            u.pop_back();
+    for (int i = 1; i < MAX; i++) {
+        while (!adj[i].empty()) {
+            adj[i].pop_back();
+        }
     }
 }
 
@@ -41,7 +42,8 @@ void dikjstra(){
             int nextVertex = u.first;
             int nextCost = u.second.first +curCost;
             int nextTime = u.second.second + curTime;
-
+            //최대 비용을 초과하는 가격이라면 패스 => 배열의 index 상으로도 패스해야함
+            if (nextCost > MAX_COST) continue;
             if(Distance[nextVertex][nextCost] > nextTime){
                 Distance[nextVertex][nextCost] = nextTime;
                 pq.push(make_pair(-nextTime,make_pair(nextCost,nextVertex)));
@@ -64,10 +66,8 @@ void dikjstra(){
 void KCM_Travel(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
-
     cin >> T;
     while (T > 0) {
-        clear();
         //input 
         cin >> N >> M >> K;
         for(int i=1; i<=K ; i++){
@@ -78,9 +78,8 @@ void KCM_Travel(){
 
         //dikjstra algorithm
         dikjstra();
-
-        //output
         T--;
+        clear();
     }
 }
 
