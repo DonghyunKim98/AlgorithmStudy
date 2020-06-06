@@ -1,7 +1,7 @@
-#include "header/BackJoon_Problem/Brutal Force/분해 합.h"
+#include "header/BackJoon_Problem/Graph/최단경로/KCM Travel.h"
 #include <bits/stdc++.h>
 
 int main()
 {
-	decomposition();
+	KCM_Travel();
 }

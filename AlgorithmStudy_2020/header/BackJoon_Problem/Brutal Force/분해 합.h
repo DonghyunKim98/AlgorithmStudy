@@ -12,26 +12,18 @@ void decomposition() {
 	cin >> N;
 
 	//process
-	//ÀÚ¸®¼ö ÆÄ¾Ç
-	int Digit=0 , temp =N;
-	while (N > 0) {
-		N /= 10;
-		Digit++;
-	}
-	int start = N - (Digit * 9);
-	int end = N; 
-	int sum;
-	for (; start <= end; start++) {
-		int temp = start;
-		sum = temp;
+	int sum=0;
+	for (int i = 1; i < N; i++) {
+		int temp = i;
+		sum = i;
 		while (temp > 0) {
-			int a = temp % 10;
-			sum += a;
+			sum += temp % 10;
 			temp /= 10;
 		}
-		if (sum == N) break;
-		if (start == end) cout << "0";
+		if (sum == N) {
+			cout << i;
+			return 0;
+		}
 	}
-	cout << sum;
-	//output
+	cout << "0";
 }

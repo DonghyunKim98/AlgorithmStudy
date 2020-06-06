@@ -19,189 +19,189 @@
     <Filter Include="헤더 파일\Book">
       <UniqueIdentifier>{4af75afb-e7d0-436a-a3f0-71bb7bd246f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\정렬문제">
-      <UniqueIdentifier>{ac015208-cf2c-4ee4-85b4-0a11ffa93ff8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\BinarySearch">
-      <UniqueIdentifier>{92fcdb99-c048-4aa5-8895-69dc0d91ccd5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Stack">
-      <UniqueIdentifier>{d59d8f2d-1b73-448b-97c0-1832617418bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Priority Queue">
-      <UniqueIdentifier>{41db203c-af44-4667-9427-923d814cfbd5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap06-Dynamic Programming">
-      <UniqueIdentifier>{726bd8d0-f813-40c4-8e95-6ac53da2819e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap02-Programming">
-      <UniqueIdentifier>{f62a9c62-cf5b-45cf-8b27-e94dbfc4749f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap02-Programming\BackTracking">
-      <UniqueIdentifier>{44f3cbab-403b-44c7-90cd-b5f0d4443bbc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap03-Efficiency">
-      <UniqueIdentifier>{2a3f3772-9f7c-44db-9f00-d6ebf01c2153}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap04-Sorting and Searching">
-      <UniqueIdentifier>{f69b00f2-bc54-4eef-a23c-cb44c1e18b29}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Dynamic Programming">
-      <UniqueIdentifier>{7537a780-e757-4557-a0f9-6978add3677e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Book\Chap07-Graph">
-      <UniqueIdentifier>{cfeed4f9-62e8-4a78-a489-59e09e2cc505}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Graph">
-      <UniqueIdentifier>{c3ecefeb-98cc-4630-a49c-db18783bd0a3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29">
-      <UniqueIdentifier>{bc3ba7dc-e05e-4ec8-9ef9-bfcb083d81f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\BackJoonProblem\Graph\최단경로">
-      <UniqueIdentifier>{12f88a52-395c-49c7-bef2-74482e1e1f26}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+    <None Include="Main.exe" />
+    <None Include="vc140.pdb" />
+    <None Include="header\BackJoon_Problem\BinarySearch\수 찾기.exe" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Setoperation.h">
-      <Filter>헤더 파일\Book\Chap02-Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="4QueensProblem.h">
-      <Filter>헤더 파일\Book\Chap02-Programming\BackTracking</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Brutal Force\분해 합.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Bitmask.h">
-      <Filter>헤더 파일\Book\Chap02-Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Brutal Force\블랙잭.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Permutation.h">
-      <Filter>헤더 파일\Book\Chap02-Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Brutal Force\체스판 다시 칠하기.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SetRepresentation.h">
-      <Filter>헤더 파일\Book\Chap02-Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\과제는 끝나지 않아!.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MaximumSubarraySum.h">
-      <Filter>헤더 파일\Book\Chap03-Efficiency</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\흩날리는 시험지 속에서 내 평점이 느껴진거야.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="소트인사이드.h">
-      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\동전 1.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="수 정렬하기3.h">
-      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 수2.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="보물.h">
-      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 함수.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="단어정렬.h">
-      <Filter>헤더 파일\BackJoonProblem\정렬문제</Filter>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 함수-번외.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="SweepLineAlgorithmCustomer.h">
-      <Filter>헤더 파일\Book\Chap04-Sorting and Searching</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\DFS와 BFS.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="WorkAndDeadLine.h">
-      <Filter>헤더 파일\Book\Chap04-Sorting and Searching</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\단지번호붙이기.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="EventScheduling.h">
-      <Filter>헤더 파일\Book\Chap04-Sorting and Searching</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\미로 탐색.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="BinarySearch.h">
-      <Filter>헤더 파일\Book\Chap04-Sorting and Searching</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\바이러스.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="기계를이용해서작업처리.h">
-      <Filter>헤더 파일\Book\Chap04-Sorting and Searching</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\벽 부수고 이동하기.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="수 찾기.h">
-      <Filter>헤더 파일\BackJoonProblem\BinarySearch</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\섬의 개수.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="이항계수.h">
-      <Filter>헤더 파일\BackJoonProblem\BinarySearch</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\숨바꼭질.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="스택.h">
-      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\유기농 배추.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="제로.h">
-      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\토마토1.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="괄호.h">
-      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\토마토2.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="균형잡힌 세상.h">
-      <Filter>헤더 파일\BackJoonProblem\Stack</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\KCM Travel.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="최대 힙.h">
-      <Filter>헤더 파일\BackJoonProblem\Priority Queue</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\미확인 도착지.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="최소 힙.h">
-      <Filter>헤더 파일\BackJoonProblem\Priority Queue</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\운동.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="절댓값 힙.h">
-      <Filter>헤더 파일\BackJoonProblem\Priority Queue</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\최단경로.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="가운데를 말해요.h">
-      <Filter>헤더 파일\BackJoonProblem\Priority Queue</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\최단경로_책코딩.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="동전세기-재귀.h">
-      <Filter>헤더 파일\Book\Chap06-Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\타임머신.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="피보나치 수2.h">
-      <Filter>헤더 파일\BackJoonProblem\Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\특정한 최단 경로.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="피보나치 함수.h">
-      <Filter>헤더 파일\BackJoonProblem\Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\플로이드.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="동전 1.h">
-      <Filter>헤더 파일\BackJoonProblem\Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\PriorityQueue\가운데를 말해요.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="피보나치 함수-번외.h">
-      <Filter>헤더 파일\BackJoonProblem\Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\PriorityQueue\절댓값 힙.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="동전세기-반복문.h">
-      <Filter>헤더 파일\Book\Chap06-Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\PriorityQueue\최대 힙.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="최장 증가 부분 수열.h">
-      <Filter>헤더 파일\Book\Chap06-Dynamic Programming</Filter>
+    <ClInclude Include="header\BackJoon_Problem\PriorityQueue\최소 힙.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="그래프의 표현.h">
-      <Filter>헤더 파일\Book\Chap07-Graph</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Sort\단어정렬.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="DFS와 BFS.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Sort\보물.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="단지번호붙이기.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Sort\소트인사이드.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="미로 탐색.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기3.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="바이러스.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Stack\괄호.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="섬의 개수.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Stack\균형잡힌 세상.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="유기농 배추.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Stack\스택.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="토마토1.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\BackJoon_Problem\Stack\제로.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="숨바꼭질.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\Book\Chap02-Programming\BackTracking\4QueensProblem.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="벽 부수고 이동하기.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\Book\Chap02-Programming\Bitmask.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="토마토2.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\DFS&amp;BFS %28Graph Search%29</Filter>
+    <ClInclude Include="header\Book\Chap02-Programming\Permutation.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="최단경로.h">
-      <Filter>헤더 파일\BackJoonProblem\Graph\최단경로</Filter>
+    <ClInclude Include="header\Book\Chap02-Programming\Setoperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap02-Programming\SetRepresentation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap03-Efficiency\MaximumSubarraySum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\BinarySearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\EventScheduling.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\SweepLineAlgorithmCustomer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\WorkAndDeadLine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\기계를이용해서작업처리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-반복문.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-재귀.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-DynamicProgramming\최장 증가 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
