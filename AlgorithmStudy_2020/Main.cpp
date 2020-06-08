@@ -1,7 +1,7 @@
-#include "header/BackJoon_Problem/Graph/최단경로/KCM Travel.h"
+#include "header/BackJoon_Problem/if문/알람 시계.h"
 #include <bits/stdc++.h>
 
 int main()
 {
-	KCM_Travel();
+	Clock();
 }

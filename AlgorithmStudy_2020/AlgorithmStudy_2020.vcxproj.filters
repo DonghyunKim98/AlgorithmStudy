@@ -173,34 +173,58 @@
     <ClInclude Include="header\Book\Chap03-Efficiency\MaximumSubarraySum.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\BinarySearch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\EventScheduling.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\SweepLineAlgorithmCustomer.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\WorkAndDeadLine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\기계를이용해서작업처리.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-반복문.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-재귀.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\최장 증가 부분 수열.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-반복문.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-재귀.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\BinarySearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\EventScheduling.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\SweepLineAlgorithmCustomer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\WorkAndDeadLine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\기계를이용해서작업처리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\고양이.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\개.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\A+B.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\사칙연산.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\곱셈.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

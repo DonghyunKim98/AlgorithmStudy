@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h" />
+    <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\분해 합.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\블랙잭.h" />
@@ -177,6 +178,7 @@
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\타임머신.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\특정한 최단 경로.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\플로이드.h" />
+    <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h" />
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\가운데를 말해요.h" />
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\절댓값 힙.h" />
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\최대 힙.h" />
@@ -189,21 +191,27 @@
     <ClInclude Include="header\BackJoon_Problem\Stack\균형잡힌 세상.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\스택.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\제로.h" />
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\A+B.h" />
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\개.h" />
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\고양이.h" />
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\곱셈.h" />
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\사칙연산.h" />
     <ClInclude Include="header\Book\Chap02-Programming\BackTracking\4QueensProblem.h" />
     <ClInclude Include="header\Book\Chap02-Programming\Bitmask.h" />
     <ClInclude Include="header\Book\Chap02-Programming\Permutation.h" />
     <ClInclude Include="header\Book\Chap02-Programming\Setoperation.h" />
     <ClInclude Include="header\Book\Chap02-Programming\SetRepresentation.h" />
     <ClInclude Include="header\Book\Chap03-Efficiency\MaximumSubarraySum.h" />
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\BinarySearch.h" />
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\EventScheduling.h" />
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\SweepLineAlgorithmCustomer.h" />
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\WorkAndDeadLine.h" />
-    <ClInclude Include="header\Book\Chap04-Sorting_And_Searching\기계를이용해서작업처리.h" />
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-반복문.h" />
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\동전세기-재귀.h" />
-    <ClInclude Include="header\Book\Chap06-DynamicProgramming\최장 증가 부분 수열.h" />
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\BinarySearch.h" />
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\EventScheduling.h" />
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\SweepLineAlgorithmCustomer.h" />
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\WorkAndDeadLine.h" />
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\기계를이용해서작업처리.h" />
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-반복문.h" />
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-재귀.h" />
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h" />
     <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h" />
+    <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
