@@ -16,3 +16,10 @@ int Clock() {
         }
     }
 }
+
+int main() {
+    //max size =255
+    char* arr;
+    printf("Set your password: ");
+    scanf("%s", arr);
+}

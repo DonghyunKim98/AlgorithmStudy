@@ -1,7 +1,6 @@
-#include "header/BackJoon_Problem/if문/알람 시계.h"
-#include <bits/stdc++.h>
+#include "header/BackJoon_Problem/수학3/최대공약수와 최소공배수.h"
+#include <iostream>
 
-int main()
-{
-	Clock();
+int main() {
+	MaxAndMin();
 }
