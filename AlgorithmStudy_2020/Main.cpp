@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/Stack/균형잡힌 세상.h"
+#include "header/BackJoon_Problem/Greedy/회의실배정.h"
 #include <iostream>
 
 int main() {
-	Balanced();
+	MeetingRoom();
 }

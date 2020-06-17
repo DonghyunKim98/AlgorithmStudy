@@ -180,6 +180,9 @@
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\타임머신.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\특정한 최단 경로.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\플로이드.h" />
+    <ClInclude Include="header\BackJoon_Problem\Greedy\ATM.h" />
+    <ClInclude Include="header\BackJoon_Problem\Greedy\잃어버린 괄호.h" />
+    <ClInclude Include="header\BackJoon_Problem\Greedy\회의실배정.h" />
     <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h" />
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\가운데를 말해요.h" />
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\절댓값 힙.h" />
@@ -233,6 +236,13 @@
     <ClInclude Include="header\BackJoon_Problem\재귀함수\팩토리얼.h" />
     <ClInclude Include="header\BackJoon_Problem\재귀함수\피보나치 수.h" />
     <ClInclude Include="header\BackJoon_Problem\재귀함수\하노이 탑 이동 순서.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\AC.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\덱.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\요세푸스 문제.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\카드2.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\큐 2.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\프린터 큐.h" />
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\회전하는 큐.h" />
     <ClInclude Include="header\Book\Chap02-Programming\BackTracking\4QueensProblem.h" />
     <ClInclude Include="header\Book\Chap02-Programming\Bitmask.h" />
     <ClInclude Include="header\Book\Chap02-Programming\Permutation.h" />
