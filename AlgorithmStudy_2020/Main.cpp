@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/Greedy/회의실배정.h"
+#include "header/BackJoon_Problem/BackTracking/N과 M(4).h"
 #include <iostream>
 
 int main() {
-	MeetingRoom();
+	NM();
 }

@@ -149,6 +149,11 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(1).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(2).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(3).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(4).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h" />
     <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h" />
@@ -181,6 +186,7 @@
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\특정한 최단 경로.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\플로이드.h" />
     <ClInclude Include="header\BackJoon_Problem\Greedy\ATM.h" />
+    <ClInclude Include="header\BackJoon_Problem\Greedy\동전 0.h" />
     <ClInclude Include="header\BackJoon_Problem\Greedy\잃어버린 괄호.h" />
     <ClInclude Include="header\BackJoon_Problem\Greedy\회의실배정.h" />
     <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h" />

@@ -1,37 +1,48 @@
 #include <bits/stdc++.h>
 //1541번 문제
+//https://sihyungyou.github.io/baekjoon-1541/ 참고
 using namespace std;
 
 void MissingParenthesis() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	char* str= new char[50];
+	char* str = new char[51];
+	int arr[25] = { 0, };
 	cin >> str;
-	int i = 0;
-	int temp_value=0, value=0;
+	int i = 0, j = 0;
+	int temp = 0, sum = 0;
 	bool is_minus_front = false;
-	string temp_number="";
+	string temp_number = "";
 	while (str[i] != '\0') {
 		if (str[i] == '+') {
-
+			sum += temp;
+			temp = 0;
 		}
 		else if (str[i] == '-') {
-			//앞에서 - 이미 등장한 경우 => 지금까지 연산한 값을 빼줌
-			if (is_minus_front) {
-				is_minus_front = false;
-				value -= temp_value;
-				temp_value = 0;
-			}
-			//안 등장한 경우 => is_minus_front만 true값으로 바꾸어주고 지금부터 연산 진행.
-			else {
-				is_minus_front = true;
-			}
+			sum += temp;
+			arr[j] = sum;
+			j++;
+			temp = 0;
+			sum = 0;
 		}
-		else 
-			temp_number += str[i];
-
+		else {
+			temp *= 10;
+			temp += (str[i] - '0');
+		}
 		i++;
 	}
-	cout << value;
+	sum += temp;
+	arr[j] = sum;
+
+	int ans = arr[0];
+	for (int i = 1; i < 25; i++) {
+		ans -= arr[i];
+	}
+	cout << ans;
 }
+
+/* 
+	마이너스 만날때마다 괄호로 묶어주자 ->문자열을 처리하는 도중에 하지말고 부분합을 배열에 저장하고 마지막에 한번에 처리. (맨 처음부터 -가 나오지는 않는다고했으니깐)
+	문자열 관련이 진짜 약하다. 아스키문자...!!
+*/
