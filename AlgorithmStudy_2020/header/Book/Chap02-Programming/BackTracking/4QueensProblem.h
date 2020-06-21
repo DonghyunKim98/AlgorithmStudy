@@ -35,7 +35,8 @@ void search(int y) {
 		if (col[x] || diag1[x + y] || diag2[x + n - 1 - y]) continue; //하나라도 1이면 퀸이 올수 없음! (유망하지않으니 부모로 돌아감)
 		col[x] = diag1[x + y] = diag2[x + n - 1 - y] = 1; //퀸이 갈수있다! (유망)
 		search(y + 1); // 유망하니 탐색
-		col[x] = diag1[x + y] = diag2[x + n - 1 - y] = 0; //원상복귀 (모든곳이 일단 못갈수 있다고 생각)
+		//BackTracking
+		col[x] = diag1[x + y] = diag2[x + n - 1 - y] = 0; 
 	}
 
 }

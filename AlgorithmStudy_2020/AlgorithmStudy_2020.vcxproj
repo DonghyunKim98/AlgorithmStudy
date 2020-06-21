@@ -149,11 +149,14 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N-Queen.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(1).h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(2).h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(3).h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(4).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h" />
     <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h" />

@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/BackTracking/N°ú M(4).h"
+#include "header/BackJoon_Problem/Àç±ÍÇÔ¼ö/º° Âï±â -10.h"
 #include <iostream>
 
 int main() {
-	NM();
+	Star();
 }
