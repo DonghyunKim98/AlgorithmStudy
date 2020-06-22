@@ -56,18 +56,6 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\흩날리는 시험지 속에서 내 평점이 느껴진거야.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\동전 1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 수2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 함수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming\피보나치 함수-번외.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\DFS와 BFS.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -393,6 +381,45 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 수2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수-번외.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming2\동전 1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\01타일.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\파도반 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\RGB거리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\정수 삼각형.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\계단 오르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\1로 만들기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\쉬운 계단 수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\포도주 시식.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 증가하는 부분 수열.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

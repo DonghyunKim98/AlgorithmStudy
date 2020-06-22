@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/재귀함수/별 찍기 -10.h"
+#include "header/BackJoon_Problem/DynamicProgramming1/포도주 시식.h"
 #include <iostream>
 
 int main() {
-	Star();
+	WineTasting();
 }
