@@ -139,7 +139,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
-    <None Include="header\BackJoon_Problem\BinarySearch\수 찾기.exe" />
     <None Include="Main.exe" />
     <None Include="vc140.pdb" />
   </ItemGroup>
@@ -157,7 +156,11 @@
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\공유기 설치.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\나무 자르기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\랜선 자르기.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\숫자 카드2.h" />
     <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h" />
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\분해 합.h" />
@@ -168,12 +171,17 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\흩날리는 시험지 속에서 내 평점이 느껴진거야.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\01타일.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\1로 만들기.h" />
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\LCS.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\RGB거리.h" />
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 바이토닉 부분 수열.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 증가하는 부분 수열.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\계단 오르기.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\쉬운 계단 수.h" />
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\연속합.h" />
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\전깃줄.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\정수 삼각형.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\파도반 수열.h" />
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\평범한 배낭.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\포도주 시식.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming2\동전 1.h" />
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 수2.h" />

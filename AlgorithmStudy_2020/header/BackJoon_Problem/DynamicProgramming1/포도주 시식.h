@@ -20,10 +20,14 @@ void WineTasting() {
 	if (N >= 2) arr[2] = juice[1] + juice[2];
 	//DP
 	for (int i = 3; i <= N; i++) {
-		//OXOO 의 경우 와 ?OXO의 경우를 따져준다.
+		//OXOO 의 경우 와 OXO의 경우를 따져준다.
 		arr[i] = max(arr[i - 3] + juice[i - 1] + juice[i], arr[i - 2] + juice[i]);
-		//근데 아래와 같이 2번 안먹는 경우도 있으므로
-		//이 부분만 어떻게 하면..
+		//그런데 OXXO의 경우도 있음 -> 이것을 이 코드로 커버 가능??
+		/*
+			YES!! 
+			how?) 예를 들어 arr[3] 의 max값이 arr[2]로 됐다면 3번째 잔은 안 먹은것
+			      그리고 arr[6]에서 arr[3]의 값을 참조한다면, 3번째잔 4번째잔 다 안먹게 되는 것.
+		*/
 		arr[i] = max(arr[i], arr[i - 1]);
 	}
 	cout << arr[N];
@@ -32,8 +36,7 @@ void WineTasting() {
 /*
    100 400 2 1 4 200
 a  O    O  X X O O
-my O    O  X O X O
-
-=>즉 2개를 건너뛰는 상황을 cover하지 못하고 있음
-=>결국 arr[i]를 채워가는 과정에서 이전 값과 현재 값을 비교해야함
+arr[3] = 500 (OOX)
+arr[4] = 501 (OOXO)
+arr[5] = 505 (OOXOO)
 */

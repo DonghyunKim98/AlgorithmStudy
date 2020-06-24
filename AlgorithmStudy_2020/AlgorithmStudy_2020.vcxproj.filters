@@ -24,7 +24,6 @@
     <None Include="cpp.hint" />
     <None Include="Main.exe" />
     <None Include="vc140.pdb" />
-    <None Include="header\BackJoon_Problem\BinarySearch\수 찾기.exe" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -420,6 +419,33 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 증가하는 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 바이토닉 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\전깃줄.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\LCS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\연속합.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\평범한 배낭.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\숫자 카드2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\랜선 자르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\나무 자르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\공유기 설치.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

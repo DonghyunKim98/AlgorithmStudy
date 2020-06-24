@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/DynamicProgramming1/포도주 시식.h"
+#include "header/BackJoon_Problem/BinarySearch/공유기 설치.h"
 #include <iostream>
 
 int main() {
-	WineTasting();
+	RouterInstall();
 }
