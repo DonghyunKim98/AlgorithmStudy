@@ -156,6 +156,8 @@
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\k번째 수.h" />
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\가장 긴 증가하는 부분 수열2.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\공유기 설치.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\나무 자르기.h" />
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\랜선 자르기.h" />
