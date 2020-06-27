@@ -231,6 +231,8 @@
     <ClInclude Include="header\BackJoon_Problem\Stack\스택 수열.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\스택.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\제로.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 부모 찾기.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름.h" />
     <ClInclude Include="header\BackJoon_Problem\문자열\크로아티아 알파벳.h" />
     <ClInclude Include="header\BackJoon_Problem\수학1\Fly me to the Alpha Centauri.h" />
     <ClInclude Include="header\BackJoon_Problem\수학1\부녀회장이 될거야.h" />

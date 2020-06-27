@@ -454,5 +454,11 @@
     <ClInclude Include="header\BackJoon_Problem\BinarySearch\가장 긴 증가하는 부분 수열2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 부모 찾기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
