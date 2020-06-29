@@ -231,8 +231,12 @@
     <ClInclude Include="header\BackJoon_Problem\Stack\스택 수열.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\스택.h" />
     <ClInclude Include="header\BackJoon_Problem\Stack\제로.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\이진 검색 트리.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리 순회.h" />
     <ClInclude Include="header\BackJoon_Problem\Tree\트리의 부모 찾기.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 순회.h" />
     <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름.h" />
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름2.h" />
     <ClInclude Include="header\BackJoon_Problem\문자열\크로아티아 알파벳.h" />
     <ClInclude Include="header\BackJoon_Problem\수학1\Fly me to the Alpha Centauri.h" />
     <ClInclude Include="header\BackJoon_Problem\수학1\부녀회장이 될거야.h" />
@@ -289,6 +293,7 @@
     <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h" />
     <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h" />
     <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h" />
+    <ClInclude Include="header\programmers\Stack Queue\다리를 지나는 트럭.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
