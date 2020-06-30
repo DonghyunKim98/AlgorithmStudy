@@ -475,5 +475,23 @@
     <ClInclude Include="header\programmers\Stack Queue\다리를 지나는 트럭.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\전화번호 목록.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\위장.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\베스트앨범.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\탑.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\기능개발.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

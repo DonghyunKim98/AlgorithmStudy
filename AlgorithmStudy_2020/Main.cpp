@@ -1,6 +1,6 @@
-#include "header/BackJoon_Problem/Tree/ÀÌÁø °Ë»ö Æ®¸®.h"
+ï»¿#include "header/programmers/Stack Queue/ê¸°ëŠ¥ê°œë°œ.h"
 #include <iostream>
 
 int main() {
-	BinarySearchTree();
+	solution({ 90,30,55 }, { 1,30,5 });
 }

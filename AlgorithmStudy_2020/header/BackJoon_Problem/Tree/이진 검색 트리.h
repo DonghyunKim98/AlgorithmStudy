@@ -7,6 +7,7 @@ int preOrder[MAX];
 int position[MAX];
 
 void PostOrder(int pre_start, int pre_end) {
+	if (pre_start > pre_end) return;
 	if (pre_start == pre_end) {
 		cout << preOrder[pre_start]<<'\n';
 		return;
@@ -34,3 +35,13 @@ void BinarySearchTree() {
 	}
 	PostOrder(0, idx-1);
 }
+
+
+/*
+	알고리즘 포인트
+	-> 집어넣기!!
+	-> root -> left -> right 로 주어진 것을
+	-> left -> right ->root 로 변환할때
+	맨 앞은 root이고 root보다 커지는 순간이 right임을 이용해서 배열을 순환하면서 확인한다.
+	단 이 방법은 O(n^2) 이 걸리긴 하는데, 노드의 개수가 10000개 이하니깐..
+*/

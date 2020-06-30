@@ -1,33 +1,33 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 using namespace std;
 
 int solution(int bridge_length, int weight, vector<int> truck_weights) {
 	int answer = 0;
-	//{Æ®·°ÀÇ ¹«°Ô,´Ù¸®¿¡ ¿ÂÁö °æ°úÇÑ ½Ã°£}
+	//{íŠ¸ëŸ­ì˜ ë¬´ê²Œ,ë‹¤ë¦¬ì— ì˜¨ì§€ ê²½ê³¼í•œ ì‹œê°„}
 	vector <pair<int, int>> bridge;
 	int total_weight = 0;
 
-	//bridge¿¡ ÀÏ´Ü ÇÏ³ª´Â ³Ö°í ½ÃÀÛ (while¹®À» Åë°úÇÏ±â À§ÇÔ)
+	//bridgeì— ì¼ë‹¨ í•˜ë‚˜ëŠ” ë„£ê³  ì‹œì‘ (whileë¬¸ì„ í†µê³¼í•˜ê¸° ìœ„í•¨)
 	total_weight += truck_weights.front();
 	bridge.push_back(make_pair(truck_weights.front(), 1));
 	truck_weights.erase(truck_weights.begin());
 	answer = 1;
 
 	while (!bridge.empty()) {
-		//bridge¿¡ ÀÖ´Â Æ®·°µé ½Ã°£ °æ°ú
+		//bridgeì— ìˆëŠ” íŠ¸ëŸ­ë“¤ ì‹œê°„ ê²½ê³¼
 		for (int i = 0; i < bridge.size(); i++)
 			bridge.at(i).second++;
 
-		//bridge¿¡ ÀÖ´Â ¸Ç ¾ÕÀÇ Æ®·° Åë°ú ¿©ºÎ °áÁ¤
+		//bridgeì— ìˆëŠ” ë§¨ ì•ì˜ íŠ¸ëŸ­ í†µê³¼ ì—¬ë¶€ ê²°ì •
 		if (bridge.at(0).second > bridge_length) {
 			total_weight -= bridge.at(0).first;
 			bridge.erase(bridge.begin());
 		}
 
-		//truckÀÌ ´ë±â¿­¿¡ ÀÖÀ» ¶§¸¸.
+		//truckì´ ëŒ€ê¸°ì—´ì— ìˆì„ ë•Œë§Œ.
 		if (!truck_weights.empty()) {
 			int current_truck = truck_weights.front();
-			//ÇöÀç bridgeÀ§¿¡ ¿Ã¶ó°£ Æ®·°¿¡ »õ·Î¿î Æ®·°ÀÇ ¹«°Ô¸¦ °¨´çÇÒ ¼ö ÀÖÀ»¶§¸¸
+			//í˜„ì¬ bridgeìœ„ì— ì˜¬ë¼ê°„ íŠ¸ëŸ­ì— ìƒˆë¡œìš´ íŠ¸ëŸ­ì˜ ë¬´ê²Œë¥¼ ê°ë‹¹í•  ìˆ˜ ìˆì„ë•Œë§Œ
 			if (total_weight + current_truck <= weight) {
 				bridge.push_back(make_pair(current_truck, 1));
 				truck_weights.erase(truck_weights.begin());
