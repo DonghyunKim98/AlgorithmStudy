@@ -1,6 +1,6 @@
-﻿#include "header/programmers/Stack Queue/기능개발.h"
+﻿#include "header/programmers/DFS BFS/단어 변환.h"
 #include <iostream>
 
 int main() {
-	solution({ 90,30,55 }, { 1,30,5 });
+	solution("hit", "cog", { "hot", "dot", "dog", "lot", "log", "cog" });
 }

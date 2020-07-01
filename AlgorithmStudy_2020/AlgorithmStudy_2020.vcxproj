@@ -293,13 +293,23 @@
     <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h" />
     <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h" />
     <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h" />
+    <ClInclude Include="header\programmers\DFS BFS\네트워크.h" />
+    <ClInclude Include="header\programmers\DFS BFS\단어 변환.h" />
+    <ClInclude Include="header\programmers\DFS BFS\여행경로.h" />
+    <ClInclude Include="header\programmers\DFS BFS\타겟 넘버.h" />
     <ClInclude Include="header\programmers\Hash\베스트앨범.h" />
     <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h" />
     <ClInclude Include="header\programmers\Hash\위장.h" />
     <ClInclude Include="header\programmers\Hash\전화번호 목록.h" />
+    <ClInclude Include="header\programmers\Sort\H-index.h" />
+    <ClInclude Include="header\programmers\Sort\K번째수.h" />
+    <ClInclude Include="header\programmers\Sort\가장 큰 수.h" />
     <ClInclude Include="header\programmers\Stack Queue\기능개발.h" />
     <ClInclude Include="header\programmers\Stack Queue\다리를 지나는 트럭.h" />
+    <ClInclude Include="header\programmers\Stack Queue\쇠막대기.h" />
+    <ClInclude Include="header\programmers\Stack Queue\주식가격.h" />
     <ClInclude Include="header\programmers\Stack Queue\탑.h" />
+    <ClInclude Include="header\programmers\Stack Queue\프린터.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
