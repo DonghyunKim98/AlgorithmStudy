@@ -1,6 +1,6 @@
-﻿#include "header/programmers/DFS BFS/단어 변환.h"
+﻿#include "header/programmers/DFS BFS/여행경로.h"
 #include <iostream>
 
 int main() {
-	solution("hit", "cog", { "hot", "dot", "dog", "lot", "log", "cog" });
+	solution({ {"ICN", "SFO"},{"ICN", "ATL" }, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}});
 }
