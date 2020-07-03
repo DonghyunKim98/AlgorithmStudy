@@ -1,6 +1,6 @@
-﻿#include "header/programmers/DFS BFS/여행경로.h"
+﻿#include "header/programmers/Greedy/단속카메라.h"
 #include <iostream>
 
 int main() {
-	solution({ {"ICN", "SFO"},{"ICN", "ATL" }, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}});
+	cout << solution({ {-20,15},{-14,5},{-18,-13},{-5,-3} });
 }

@@ -37,6 +37,165 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\Book\Chap02-Programming\BackTracking\4QueensProblem.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap02-Programming\Bitmask.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap02-Programming\Permutation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap02-Programming\Setoperation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap02-Programming\SetRepresentation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap03-Efficiency\MaximumSubarraySum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-반복문.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-재귀.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\BinarySearch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\EventScheduling.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\SweepLineAlgorithmCustomer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\WorkAndDeadLine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap04-Sorting And Searching\기계를이용해서작업처리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\다리를 지나는 트럭.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\전화번호 목록.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\위장.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Hash\베스트앨범.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\탑.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\기능개발.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\프린터.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\쇠막대기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Stack Queue\주식가격.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Sort\K번째수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Sort\가장 큰 수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Sort\H-index.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\DFS BFS\타겟 넘버.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\DFS BFS\네트워크.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\DFS BFS\단어 변환.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\DFS BFS\여행경로.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Greedy\체육복.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Greedy\큰 수 만들기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Greedy\조이스틱.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Greedy\구명보트.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N-Queen.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%281%29.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%282%29.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%283%29.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%284%29.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\k번째 수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\가장 긴 증가하는 부분 수열2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\공유기 설치.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\나무 자르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\랜선 자르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BinarySearch\숫자 카드2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\덩치.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -46,6 +205,9 @@
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\블랙잭.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Brutal Force\영화감독 숌.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Brutal Force\체스판 다시 칠하기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -53,6 +215,60 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\흩날리는 시험지 속에서 내 평점이 느껴진거야.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\01타일.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\1로 만들기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\LCS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\RGB거리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 바이토닉 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 증가하는 부분 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\계단 오르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\쉬운 계단 수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\연속합.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\전깃줄.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\정수 삼각형.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\파도반 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\평범한 배낭.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\포도주 시식.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 수2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수-번외.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming2\동전 1.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Graph\DFS_BFS\DFS와 BFS.h">
@@ -109,6 +325,21 @@
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\플로이드.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Greedy\ATM.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Greedy\동전 0.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Greedy\잃어버린 괄호.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Greedy\회의실배정.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\가운데를 말해요.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -121,6 +352,12 @@
     <ClInclude Include="header\BackJoon_Problem\PriorityQueue\최소 힙.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\나이순 정렬.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\단어 정렬.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Sort\단어정렬.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -130,7 +367,19 @@
     <ClInclude Include="header\BackJoon_Problem\Sort\소트인사이드.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\좌표 정렬하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Sort\통계학.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Stack\괄호.h">
@@ -139,82 +388,31 @@
     <ClInclude Include="header\BackJoon_Problem\Stack\균형잡힌 세상.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Stack\스택 수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Stack\스택.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Stack\제로.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap02-Programming\BackTracking\4QueensProblem.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\이진 검색 트리.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap02-Programming\Bitmask.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리 순회.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap02-Programming\Permutation.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 부모 찾기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap02-Programming\Setoperation.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 순회.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap02-Programming\SetRepresentation.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\Book\Chap03-Efficiency\MaximumSubarraySum.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap07-Graph\그래프의 표현.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\수 찾기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-반복문.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-Dynamic Programming\동전세기-재귀.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap06-Dynamic Programming\최장 증가 부분 수열.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting And Searching\BinarySearch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting And Searching\EventScheduling.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting And Searching\SweepLineAlgorithmCustomer.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting And Searching\WorkAndDeadLine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap04-Sorting And Searching\기계를이용해서작업처리.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\Book\Chap08-Algorithm design\Bit-parallel algorithm.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Bit Operation\데스스타.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\고양이.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\개.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\A+B.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\사칙연산.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\곱셈.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\if문\알람 시계.h">
+    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\문자열\크로아티아 알파벳.h">
@@ -226,28 +424,28 @@
     <ClInclude Include="header\BackJoon_Problem\수학1\부녀회장이 될거야.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학2\골드바흐의 추측.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학2\네 번째 점.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학2\베르트랑 공준.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학2\소수 구하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학2\소수 찾기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학2\소수.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학2\소수 구하기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학2\베르트랑 공준.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학2\골드바흐의 추측.h">
+    <ClInclude Include="header\BackJoon_Problem\수학2\직각삼각형.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학2\직사각형에서 탈출.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학2\네 번째 점.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학2\직각삼각형.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학2\택시 기하학.h">
@@ -256,55 +454,19 @@
     <ClInclude Include="header\BackJoon_Problem\수학2\터렛.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\재귀함수\팩토리얼.h">
+    <ClInclude Include="header\BackJoon_Problem\수학3\검문.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\재귀함수\피보나치 수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\재귀함수\별 찍기 -10.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\재귀함수\하노이 탑 이동 순서.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Brutal Force\영화감독 숌.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\수 정렬하기2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\통계학.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\나이순 정렬.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\좌표 정렬하기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Sort\단어 정렬.h">
+    <ClInclude Include="header\BackJoon_Problem\수학3\링.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학3\배수와 약수.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학3\약수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학3\소인수분해.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학3\최대공약수와 최소공배수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학3\검문.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학3\링.h">
+    <ClInclude Include="header\BackJoon_Problem\수학3\약수.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학3\이항 계수1.h">
@@ -313,214 +475,67 @@
     <ClInclude Include="header\BackJoon_Problem\수학3\이항 계수2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학3\조합 0의 개수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\수학3\최대공약수와 최소공배수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학3\패션왕 신해빈.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\수학3\팩토리얼 0의 개수.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\수학3\조합 0의 개수.h">
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\A+B.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Stack\스택 수열.h">
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\개.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\큐 2.h">
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\고양이.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\덱.h">
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\곱셈.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\카드2.h">
+    <ClInclude Include="header\BackJoon_Problem\입출력과 사칙연산\사칙연산.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\요세푸스 문제.h">
+    <ClInclude Include="header\BackJoon_Problem\재귀함수\별 찍기 -10.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\회전하는 큐.h">
+    <ClInclude Include="header\BackJoon_Problem\재귀함수\팩토리얼.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\큐, 덱\프린터 큐.h">
+    <ClInclude Include="header\BackJoon_Problem\재귀함수\피보나치 수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\재귀함수\하노이 탑 이동 순서.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\큐, 덱\AC.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Greedy\ATM.h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\덱.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Greedy\잃어버린 괄호.h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\요세푸스 문제.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Greedy\회의실배정.h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\카드2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Greedy\동전 0.h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\큐 2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(1).h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\프린터 큐.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(2).h">
+    <ClInclude Include="header\BackJoon_Problem\큐, 덱\회전하는 큐.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(3).h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(4).h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N-Queen.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 수2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\피보나치 함수-번외.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming2\동전 1.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\01타일.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\파도반 수열.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\RGB거리.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\정수 삼각형.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\계단 오르기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\1로 만들기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\쉬운 계단 수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\포도주 시식.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 증가하는 부분 수열.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\가장 긴 바이토닉 부분 수열.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\전깃줄.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\LCS.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\연속합.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\DynamicProgramming1\평범한 배낭.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\숫자 카드2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\랜선 자르기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\나무 자르기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\공유기 설치.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\k번째 수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\BinarySearch\가장 긴 증가하는 부분 수열2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 부모 찾기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 지름2.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\트리 순회.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\트리의 순회.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Tree\이진 검색 트리.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\다리를 지나는 트럭.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Hash\전화번호 목록.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Hash\위장.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Hash\베스트앨범.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\탑.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\기능개발.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\프린터.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\쇠막대기.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Stack Queue\주식가격.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Sort\K번째수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Sort\가장 큰 수.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\Sort\H-index.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\DFS BFS\타겟 넘버.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\DFS BFS\네트워크.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\DFS BFS\단어 변환.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\programmers\DFS BFS\여행경로.h">
+    <ClInclude Include="header\programmers\Greedy\단속카메라.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

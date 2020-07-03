@@ -149,10 +149,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\BackJoon_Problem\BackTracking\N-Queen.h" />
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(1).h" />
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(2).h" />
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(3).h" />
-    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M(4).h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%281%29.h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%282%29.h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%283%29.h" />
+    <ClInclude Include="header\BackJoon_Problem\BackTracking\N과 M%284%29.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스도쿠.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\스타트와  링크.h" />
     <ClInclude Include="header\BackJoon_Problem\BackTracking\연산자 끼워넣기.h" />
@@ -297,6 +297,11 @@
     <ClInclude Include="header\programmers\DFS BFS\단어 변환.h" />
     <ClInclude Include="header\programmers\DFS BFS\여행경로.h" />
     <ClInclude Include="header\programmers\DFS BFS\타겟 넘버.h" />
+    <ClInclude Include="header\programmers\Greedy\구명보트.h" />
+    <ClInclude Include="header\programmers\Greedy\단속카메라.h" />
+    <ClInclude Include="header\programmers\Greedy\조이스틱.h" />
+    <ClInclude Include="header\programmers\Greedy\체육복.h" />
+    <ClInclude Include="header\programmers\Greedy\큰 수 만들기.h" />
     <ClInclude Include="header\programmers\Hash\베스트앨범.h" />
     <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h" />
     <ClInclude Include="header\programmers\Hash\위장.h" />
