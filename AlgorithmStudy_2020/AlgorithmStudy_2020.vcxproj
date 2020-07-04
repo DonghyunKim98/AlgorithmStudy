@@ -202,6 +202,7 @@
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\KCM Travel.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\미확인 도착지.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\운동.h" />
+    <ClInclude Include="header\programmers\Greedy\저울.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\최단경로.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\최단경로_책코딩.h" />
     <ClInclude Include="header\BackJoon_Problem\Graph\최단경로\타임머신.h" />
@@ -299,6 +300,7 @@
     <ClInclude Include="header\programmers\DFS BFS\타겟 넘버.h" />
     <ClInclude Include="header\programmers\Greedy\구명보트.h" />
     <ClInclude Include="header\programmers\Greedy\단속카메라.h" />
+    <ClInclude Include="header\programmers\Greedy\섬 연결하기.h" />
     <ClInclude Include="header\programmers\Greedy\조이스틱.h" />
     <ClInclude Include="header\programmers\Greedy\체육복.h" />
     <ClInclude Include="header\programmers\Greedy\큰 수 만들기.h" />
