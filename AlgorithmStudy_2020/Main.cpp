@@ -1,7 +1,7 @@
-﻿#include "header/programmers//Greedy/저울.h"
+﻿#include "header/programmers/Brutal Force/모의고사.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-	cout << solution({ 1});
+	solution({ 1,2,3,4,5 });
 }
