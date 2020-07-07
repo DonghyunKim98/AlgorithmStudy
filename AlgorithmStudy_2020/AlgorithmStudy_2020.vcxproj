@@ -209,6 +209,8 @@
     <ClInclude Include="header\programmers\Binary Search\징검다리.h" />
     <ClInclude Include="header\programmers\Brutal Force\모의고사.h" />
     <ClInclude Include="header\programmers\Brutal Force\소수 찾기.h" />
+    <ClInclude Include="header\programmers\Brutal Force\숫자 야구.h" />
+    <ClInclude Include="header\programmers\Brutal Force\카펫.h" />
     <ClInclude Include="header\programmers\Greedy\저울.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\최단경로.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\최단경로_책코딩.h" />
@@ -315,6 +317,10 @@
     <ClInclude Include="header\programmers\Hash\완주하지 못한 선수.h" />
     <ClInclude Include="header\programmers\Hash\위장.h" />
     <ClInclude Include="header\programmers\Hash\전화번호 목록.h" />
+    <ClInclude Include="header\programmers\Heap\더 맵게.h" />
+    <ClInclude Include="header\programmers\Heap\디스크 컨트롤러.h" />
+    <ClInclude Include="header\programmers\Heap\라면공장.h" />
+    <ClInclude Include="header\programmers\Heap\이중우선순위큐.h" />
     <ClInclude Include="header\programmers\Sort\H-index.h" />
     <ClInclude Include="header\programmers\Sort\K번째수.h" />
     <ClInclude Include="header\programmers\Sort\가장 큰 수.h" />
