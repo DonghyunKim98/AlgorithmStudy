@@ -1,7 +1,7 @@
-﻿#include "header/programmers/Heap/이중우선순위큐.h"
+﻿#include "header/programmers/Dynamic Programming/등굣길.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-	solution({ "I 4", "I 3", "I 2", "I 1", "D 1", "D 1", "D - 1", "D - 1", "I 5", "I 6"});
+	cout << solution(4, 3, { {2,2} });
 }
