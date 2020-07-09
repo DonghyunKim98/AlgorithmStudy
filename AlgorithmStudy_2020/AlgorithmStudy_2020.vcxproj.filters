@@ -595,5 +595,20 @@
     <ClInclude Include="header\programmers\Dynamic Programming\등굣길.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\programmers\Graph\가장 먼 노드.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Graph\순위.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Dynamic Programming\카드 게임.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Dynamic Programming\도둑질.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Dynamic Programming\서울에서 경산까지.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

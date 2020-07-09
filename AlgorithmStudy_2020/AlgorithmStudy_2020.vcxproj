@@ -212,9 +212,14 @@
     <ClInclude Include="header\programmers\Brutal Force\숫자 야구.h" />
     <ClInclude Include="header\programmers\Brutal Force\카펫.h" />
     <ClInclude Include="header\programmers\Dynamic Programming\N으로 표현.h" />
+    <ClInclude Include="header\programmers\Dynamic Programming\도둑질.h" />
     <ClInclude Include="header\programmers\Dynamic Programming\등굣길.h" />
+    <ClInclude Include="header\programmers\Dynamic Programming\서울에서 경산까지.h" />
     <ClInclude Include="header\programmers\Dynamic Programming\정수 삼각형.h" />
+    <ClInclude Include="header\programmers\Dynamic Programming\카드 게임.h" />
     <ClInclude Include="header\programmers\Dynamic Programming\타일 장식물.h" />
+    <ClInclude Include="header\programmers\Graph\가장 먼 노드.h" />
+    <ClInclude Include="header\programmers\Graph\순위.h" />
     <ClInclude Include="header\programmers\Greedy\저울.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\최단경로.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\최단경로_책코딩.h" />

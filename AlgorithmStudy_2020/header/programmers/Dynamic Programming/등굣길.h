@@ -2,6 +2,7 @@
 #define lli long long int
 using namespace std;
 const int MAX = 100 + 1;
+const int division = 1000000007;
 lli dp[MAX][MAX];
 int solution(int m, int n, vector<vector<int>> puddles) {
     int answer = 0;
@@ -14,7 +15,7 @@ int solution(int m, int n, vector<vector<int>> puddles) {
         for (int xpos = 1; xpos <= m; xpos++) {
             if (dp[ypos][xpos] == -1) dp[ypos][xpos] = 0;
             else if (ypos == 1 && xpos == 1) continue;
-            else dp[ypos][xpos] = dp[ypos - 1][xpos] + dp[ypos][xpos - 1];
+            else dp[ypos][xpos] = (dp[ypos - 1][xpos]%division + dp[ypos][xpos - 1]%division)%division;
         }
     }
     return dp[n][m];
