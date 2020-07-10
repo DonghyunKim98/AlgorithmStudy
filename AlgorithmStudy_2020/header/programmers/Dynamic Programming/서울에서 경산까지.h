@@ -30,20 +30,28 @@ int solution(int K, vector<vector<int>> travel) {
             }
             //둘다 j까진 못함.(초과)
             if (walkTime > j && bikeTime > j){
-                dp[i][j] = dp[i - 1][j];
+                dp[i][j] = 0;
             }
             //하나만 j까지 됨. (도보만 되는 경우)
             else if (walkTime <= j && bikeTime > j) {
+                if (dp[i - 1][j - walkTime] == 0) {
+                    dp[i][j] = 0;
+                    continue;
+                }
                 dp[i][j] = dp[i-1][j - walkTime] + walkMoney;
             }
             //하나만 j까지 됨 (자전거만 되는 경우)
             else if (walkTime > j && bikeTime <= j) {
+                if (dp[i - 1][j - bikeTime] == 0) {
+                    dp[i][j] = 0;
+                    continue;
+                }
                 dp[i][j] = dp[i-1][j - bikeTime] + bikeMoney;
             }
             //둘다 j까지 됨.
             else if (walkTime <= j && bikeTime <= j) {
-                long long  tempWalk = dp[i-1][j - walkTime] + walkMoney;
-                long long  tempBike = dp[i-1][j - bikeTime] + bikeMoney;
+                long long  tempWalk = dp[i - 1][j - walkTime]==0 ? 0 : dp[i-1][j - walkTime] + walkMoney;
+                long long  tempBike = dp[i - 1][j - bikeTime]==0 ? 0 : dp[i-1][j - bikeTime] + bikeMoney;
                 dp[i][j] =  max(tempBike, tempWalk);
             }
         }

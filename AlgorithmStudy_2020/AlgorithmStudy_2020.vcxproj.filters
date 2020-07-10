@@ -610,5 +610,11 @@
     <ClInclude Include="header\programmers\Dynamic Programming\서울에서 경산까지.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\programmers\Graph\사이클 제거.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\Graph\방의 개수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -219,6 +219,8 @@
     <ClInclude Include="header\programmers\Dynamic Programming\카드 게임.h" />
     <ClInclude Include="header\programmers\Dynamic Programming\타일 장식물.h" />
     <ClInclude Include="header\programmers\Graph\가장 먼 노드.h" />
+    <ClInclude Include="header\programmers\Graph\방의 개수.h" />
+    <ClInclude Include="header\programmers\Graph\사이클 제거.h" />
     <ClInclude Include="header\programmers\Graph\순위.h" />
     <ClInclude Include="header\programmers\Greedy\저울.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\최단경로.h" />
