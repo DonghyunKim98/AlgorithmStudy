@@ -191,6 +191,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 수2.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 함수-번외.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 함수.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\파일 합치기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\DFS와 BFS.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\단지번호붙이기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\미로 탐색.h" />
