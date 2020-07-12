@@ -1,7 +1,7 @@
-﻿#include "header/programmers/Graph/방의 개수.h"
+﻿#include "header/BackJoon_Problem/단계별로 풀기/DynamicProgramming2/파일 합치기.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-	cout << solution({ 7,5,3,1,1,3,5,7 });
+	FileMerge();
 }
