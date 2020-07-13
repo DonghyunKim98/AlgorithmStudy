@@ -616,5 +616,20 @@
     <ClInclude Include="header\programmers\Graph\방의 개수.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\파일 합치기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\etc\Graph\산만한 고양이.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\앱.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\상근이의 여행.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\최소 스패닝 트리.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -15,7 +15,8 @@ int solution(vector<int> arrows) {
 	vertex_visited[{x, y}] = 1;
 
 	for (int i = 0; i < arrows.size(); i++) {
-		//X 자 교차형태도 세야하므로, 2배
+		//X 자 교차형태도 세야하므로, 2배 => 1/2 만큼 변의 길이로 교차될 수 있음.
+		//2배로 늘리면 무조건 정수 격자점을 통과
 		for (int j = 0; j < 2; j++) {
 			int nXpos = x + dx[arrows[i]];
 			int nYpos = y + dy[arrows[i]];
@@ -41,4 +42,6 @@ int solution(vector<int> arrows) {
 	Line 21~23 추가 해설
 	- 이전에 방문했다고 또 방문하다고 반드시 도형을 보장할 수 있는가??
 	=> YES!! '닫힌 도형'이 되기 때문이다.
+
+
 */
