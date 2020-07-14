@@ -188,6 +188,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\파도반 수열.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\평범한 배낭.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\포도주 시식.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\내리막길.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\동전 1.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 수2.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 함수-번외.h" />
@@ -207,6 +208,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\KCM Travel.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\미확인 도착지.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\운동.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\별자리 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\상근이의 여행.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\최소 스패닝 트리.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
