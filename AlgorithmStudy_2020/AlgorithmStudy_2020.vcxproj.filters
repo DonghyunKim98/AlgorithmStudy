@@ -637,5 +637,14 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\내리막길.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\우주신과의 교감.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\행성 터널.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\팰린드롬.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

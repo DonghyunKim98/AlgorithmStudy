@@ -195,6 +195,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming1\피보나치 함수.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\앱.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\파일 합치기.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\팰린드롬.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\DFS와 BFS.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\단지번호붙이기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\미로 탐색.h" />
@@ -210,7 +211,9 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\운동.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\별자리 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\상근이의 여행.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\우주신과의 교감.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\최소 스패닝 트리.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\행성 터널.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
     <ClInclude Include="header\programmers\Binary Search\징검다리.h" />
