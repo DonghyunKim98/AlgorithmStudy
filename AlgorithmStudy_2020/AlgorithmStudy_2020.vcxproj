@@ -196,6 +196,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\앱.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\파일 합치기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\팰린드롬.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\DynamicProgramming2\행렬 곱셈 순서.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\DFS와 BFS.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\단지번호붙이기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\DFS_BFS\미로 탐색.h" />
