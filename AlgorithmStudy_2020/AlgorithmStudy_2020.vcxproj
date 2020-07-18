@@ -149,6 +149,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\퐁당퐁당 1.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\피자는 나눌 수록 커지잖아요.h" />
     <ClInclude Include="header\BackJoon_Problem\etc\Binary Search\입국심사.h" />
     <ClInclude Include="header\BackJoon_Problem\etc\Graph\산만한 고양이.h" />
     <ClInclude Include="header\BackJoon_Problem\etc\Greedy\크게 만들기.h" />

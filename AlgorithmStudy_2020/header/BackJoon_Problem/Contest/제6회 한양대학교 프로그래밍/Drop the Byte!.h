@@ -10,33 +10,30 @@ void solution() {
 
 	int N;
 	cin >> N;
-
+	int idx = 0;
 	for (int i = 0; i < N; i++) {
 		string input, temp;
 		cin >> input;
-		if (input == "char") {
-			temp = password.substr(0, 2);
-			password = password.substr(2, password.size() - 2);
-		}
-		else if (input == "int") {
-			temp = password.substr(0, 8);
-			password = password.substr(8, password.size() - 8);
-		}
+		int cnt;
+		if (input == "char") cnt = 2;
+		else if (input == "int") cnt = 8;
 		//long_long 老锭
-		else {
-			temp = password.substr(0, 16);
-			password = password.substr(16, password.size() - 16);
-		}
-		int answer = 0;
-		for (int j = 0; j < temp.size(); j++) {
+		else cnt = 16;
+		long long answer = 0;
+		for (int j = 0; j < cnt; j++) {
 			//0~9 贸府
-			if (temp[j] >= '0' && temp[j] <= '9')
-				answer += pow(16, temp.size() - 1 - j) * (temp[j] - '0');
+			if (password[idx + j] >= '0' && password[idx + j] <= '9')
+				answer = answer*16 + (password[idx + j] - '0');
 			//a~f 贸府
 			else
-				answer += pow(16, temp.size() - 1 - j) * (temp[j] - 'a' + 10);
+				answer = answer*16 + (password[idx + j] - 'a' + 10);
 		}
 		cout << answer << ' ';
+
+		if (input == "char") idx += 2;
+		else if (input == "int") idx += 8;
+		//long_long 老锭
+		else idx += 16;
 	}
 }
 
