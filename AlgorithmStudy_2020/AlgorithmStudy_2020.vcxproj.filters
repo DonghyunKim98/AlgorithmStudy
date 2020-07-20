@@ -667,5 +667,14 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\디저트.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\상남자 곽철용.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\투튜브.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\퐁당퐁당 2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
