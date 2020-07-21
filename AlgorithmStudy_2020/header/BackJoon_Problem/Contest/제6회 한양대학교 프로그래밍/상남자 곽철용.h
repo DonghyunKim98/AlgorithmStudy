@@ -36,7 +36,12 @@ void solution() {
 	int answer = 0;
 	int start = 0, end = 1;
 	int len = vc2.size() - 1;
-	//아무리 pair가 많아도 최대 M-2개. 
+	//아무리 pair가 많아도 최대 M-1개. 
+	/*
+		0 0 0 1 1 2 3 4
+		(0,1) (0,1) (0,2), (3,4)
+	*/
+	map<int, bool> mp;
 	while (end<=len&&answer<M-1) {
 		//곽철용보다 점수가 높을때까지 일단 end index를 올려줌
 		while (vc2[end] - vc2[start] <= gap) {
@@ -49,7 +54,15 @@ void solution() {
 			따라서 start-end가 gap을 넘는 순간의 pari를 발견했으면 그 2개를 더이상 못쓰므로,
 			start와 end를 둘다 증가시켜줘야 한다.
 		*/
-		answer++,start++,end++;
+		//이전에 end가 방문한 곳이 아니라면 -> answer
+		if (mp.count(start)==0) {
+			mp[end] = true;
+			answer++,start++,end++;
+		}
+		//이전에 end가 방문한 곳이라면 -> start만 하나 늘려줌
+		else {
+			start++;
+		}
 	}
 	cout << answer;
 }
