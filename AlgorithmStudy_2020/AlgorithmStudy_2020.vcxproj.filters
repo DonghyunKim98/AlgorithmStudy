@@ -688,5 +688,8 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\지하철.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\programmers\단체사진 찍기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

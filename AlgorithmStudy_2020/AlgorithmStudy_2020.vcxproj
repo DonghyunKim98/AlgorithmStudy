@@ -365,6 +365,7 @@
     <ClInclude Include="header\programmers\Stack Queue\주식가격.h" />
     <ClInclude Include="header\programmers\Stack Queue\탑.h" />
     <ClInclude Include="header\programmers\Stack Queue\프린터.h" />
+    <ClInclude Include="header\programmers\단체사진 찍기.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

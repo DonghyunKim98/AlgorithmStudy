@@ -1,88 +1,62 @@
-#include <bits/stdc++.h>
-//17940번 문제
+#include<bits/stdc++.h>
+#define all(x) (x).begin(),(x).end()
 using namespace std;
-const int MAX = 1000 + 1;
-vector<pair<int, int>> adj[MAX];
-int Distance[MAX];
-bool visited[MAX];
-bool isB[MAX];
-int cnt[MAX];
-int N, M;
+typedef long long ll;
+typedef pair<int, int> pii;
+const ll MOD = 1e9 + 7;
+#define MAX 1001
+vector<pii> graph[MAX];
+int company[MAX], cost[MAX];
+bool visit[MAX];
 
-void dijkstra(int start) {
-	priority_queue<pair<int, int>> pq;
-	//base case
-	pq.push(make_pair(0, start));
-	Distance[start] = 0, cnt[start] = 0;
+int dijkstra(int s, int e) {
+    priority_queue<pii> pq;
+    memset(cost, 0x3f, sizeof(cost));
+    cost[s] = 0;
+    pq.push(pii(0, s));
 
-	while (!pq.empty()) {
-		int cost = -pq.top().first;
-		int currentNode = pq.top().second;
-		pq.pop();
+    while (!pq.empty()) {
+        int cur = pq.top().second;
+        pq.pop();
+        if (visit[cur])continue;
+        visit[cur] = true;
 
-		if (visited[currentNode]) continue;
-		visited[currentNode] = true;
+        for (auto u : graph[cur]) {
+            int nxt = u.first;
+            int W = u.second;
+            if (cost[nxt] > cost[cur] + W) {
+                cost[nxt] = cost[cur] + W;
+                pq.push(pii(-cost[nxt], nxt));
+            }
+        }
+    }
 
-		for (auto u : adj[currentNode]) {
-			int nextNode = u.first;
-			int weight = u.second + cost;
-			//다음역이 갈아타야 할때
-			if (isB[currentNode] != isB[nextNode]) {
-				//더 적게 환승할 수 있다면
-				if (cnt[currentNode] + 1 < cnt[nextNode]) {
-					Distance[nextNode] = weight;
-					pq.push(make_pair(-weight, nextNode));
-					cnt[nextNode] = cnt[currentNode] + 1;
-				}
-				//환승횟수가 같다면
-				else if (cnt[currentNode]+1 == cnt[nextNode]) {
-					//거리가 더 적은쪽을 따줘준다.
-					if (Distance[nextNode] > weight) {
-						Distance[nextNode] = weight;
-						pq.push(make_pair(-weight, nextNode));
-						cnt[nextNode] = cnt[currentNode] + 1;
-					}
-				}
-
-			}
-			//갈아타지 않아도 된다면
-			else {
-				//더 적게 환승할 수 있다면
-				if (cnt[currentNode] < cnt[nextNode]) {
-					Distance[nextNode] = weight;
-					pq.push(make_pair(-weight, nextNode));
-					cnt[nextNode] = cnt[currentNode];
-				}
-				//환승횟수가 같다면
-				else if (cnt[currentNode] == cnt[nextNode]) {
-					//거리가 더 적은쪽을 따줘준다.
-					if (Distance[nextNode] > weight) {
-						Distance[nextNode] = weight;
-						pq.push(make_pair(-weight, nextNode));
-						cnt[nextNode] = cnt[currentNode];
-					}
-				}
-			}
-		}
-	}
+    return cost[e];
 }
+
+#define MAXD 1000000
 
 void solution() {
-	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	cin >> N >> M;
-	for (int i = 0; i < N; i++)
-		cin >> isB[i];
+    ios::sync_with_stdio(false); cin.tie(0);
+    int n, m; cin >> n >> m;
+    for (int i = 0; i < n; i++)cin >> company[i];
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            int x; cin >> x;
+            if (i == j || !x)continue;
+            if (company[i] == company[j])
+                graph[i].emplace_back(j, x);
+            else
+                graph[i].emplace_back(j, x + MAXD);
+        }
+    }
 
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			int temp;
-			cin >> temp;
-			if (temp == 0) continue;
-			else adj[i].push_back(make_pair(j, temp));
-		}
-	}
-	fill_n(Distance, MAX, INT_MAX);
-	fill_n(cnt, MAX, INT_MAX);
-	dijkstra(0);
-	cout << cnt[M] << ' ' << Distance[M];
+    int answer = dijkstra(0, m);
+    cout << answer / MAXD << " " << answer % MAXD;
+
 }
+
+/*
+    진짜 대단하다고 느껴질수 밖에 없는 코드.
+    원래 코드가 틀린 이유는 '환승을 덜하기 -> 더 적은 비용으로 운행하기' 라는 2가지 조건을 만족시키지 못하는 반례가 있었을 것이다.
+*/
