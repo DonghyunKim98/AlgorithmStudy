@@ -691,5 +691,8 @@
     <ClInclude Include="header\programmers\단체사진 찍기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\구슬 탈출 2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

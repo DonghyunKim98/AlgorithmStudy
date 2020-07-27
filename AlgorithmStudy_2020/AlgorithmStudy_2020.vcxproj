@@ -228,6 +228,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\우주신과의 교감.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\최소 스패닝 트리.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\행성 터널.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\구슬 탈출 2.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
     <ClInclude Include="header\programmers\Binary Search\징검다리.h" />
