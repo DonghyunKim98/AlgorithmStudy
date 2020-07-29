@@ -2,66 +2,74 @@
 //3190번 문제
 using namespace std;
 const int MAX = 100 + 1;
-bool arr[MAX][MAX];
-bool snake[MAX][MAX];
-vector <pair<int, char>> vc(MAX);
+
+bool apple[MAX][MAX];
+bool visited[MAX][MAX];
+
+typedef struct {
+	int y;
+	int x;
+}Dir;
+Dir moveDir[4] = { {0,1},{1,0},{0,-1},{-1,0} };//E S W N
+
+vector <pair<int, char>> change(MAX);
+deque<pair<int, int>> snake;
 int N, K, L;
-pair<int, int> direction[4] = { {0,1},{1,0},{0,-1},{-1,0} };
 
 void solution() {
 	ios::sync_with_stdio(0); cin.tie(0);
-	memset(arr, false, sizeof(arr));
-	memset(snake, false, sizeof(arr));
-	//Input
-	cin >> N >> K;
+	memset(apple, false, sizeof(apple));
+	memset(visited, false, sizeof(visited));
+	cin >> N;
+	cin >> K;
 	for (int i = 1; i <= K; i++) {
 		int col, row;
 		cin >> col >> row;
-		arr[col][row] = true;
+		apple[col][row] = true;
 	}
 	cin >> L;
-	for (int i = 0; i < L; i++) {
+	for (int i = 1; i <= L; i++) {
 		int temp;
 		char temp2;
 		cin >> temp >> temp2;
-		vc[i] = make_pair(temp, temp2);
+		change[i] = make_pair(temp, temp2);
 	}
-
-
-	int cnt = 0, SnakeLength = 1;
-	int startK = 0, startIdx = 0, endK = 0, endIdx = 0;
-	int startX = 1, startY = 1, endX = 1, endY = 1;
-	snake[1][1] = true;
-
-	while (startX > 0 && startX <= N && startY > 0 && startY <= N) {
+	int cnt = 0, idx = 0, change_idx=1;
+	snake.push_back({ 1,1 });
+	visited[1][1] = true;
+	while (1) {
 		cnt++;
-		startY += direction[startK].first, startX += direction[startK].second;
-		if (snake[startY][startX] == true) break;
-
-		snake[startY][startX] = true;
-		//사과가 없는경우 => end위치를 늘려줌
-		if (arr[startY][startX] == false) {
-			snake[endY][endX] = false;
-			endY += direction[endK].first, endX += direction[endK].second;
-		}
-		//사과가 있는 경우 => end를 가만히 두어야함&&SnakeLength를 늘려야함&&사과를 없애야 함
+		pair<int, int> before = snake.front();
+		pair<int, int> cur = { before.first + moveDir[idx].y,before.second + moveDir[idx].x };
+		//범위를 벗어남 or 뱀이 머리가 몸에 부딪힘
+		if (visited[cur.first][cur.second] || !(0 < cur.first && cur.first <= N && 0 < cur.second && cur.second <= N)) break;
+		//한칸 전진
+		visited[cur.first][cur.second] = true;
+		snake.push_front(cur);
+		//사과가 있는 위치면 꼬리 그대로, 사과만 지운다
+		if (apple[cur.first][cur.second])	apple[cur.first][cur.second] = false;
+		//사과가 없으면 꼬리를 자른다
 		else {
-			arr[startY][startX] = false;
-			SnakeLength++;
+			pair<int, int> tail = snake.back();
+			visited[tail.first][tail.second] = false;
+			snake.pop_back();
 		}
-		//방향 바꾸는 경우
-		if (vc[startIdx].first == cnt && (startIdx < L)) {
-			vc[startIdx].second == 'D' ? startK++ : startK--;
-			if (startK == -1) startK = 3;
-			else if (startK == 4) startK = 0;
-			startIdx++;
-		}
-		if (vc[endIdx].first == cnt - SnakeLength && (endIdx < L)) {
-			vc[endIdx].second == 'D' ? endK++ : endK--;
-			if (endK == -1) endK = 3;
-			else if (endK == 4) endK = 0;
-			endIdx++;
+
+		//방향 전환 
+		//change_idx의 overflow 방지 코드!! => 실수하지 않기
+		if (change_idx <= L && change[change_idx].first == cnt) {
+			if (change[change_idx].second == 'L') idx = (idx + 3) % 4;
+			else idx = (idx + 1) % 4;
+			change_idx++;
 		}
 	}
 	std::cout << cnt;
 }
+
+/*
+	알고리즘 포인트
+	1) 결국 중요한건 머리(시작) 과 꼬리(끝)
+	=> 한번에 관리 할 수 있는 것은 Deque
+	2) moveDir 로 관리하는 것이 더 좋음.
+	=> pair로 선언하기 보다는 struct로 선언해서 변수명이 더 직관적일 수 있게 할 것.
+*/
