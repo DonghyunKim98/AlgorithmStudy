@@ -231,6 +231,7 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\구슬 탈출 2.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\뱀.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\시험 감독.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\주사위 굴리기.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\퇴사.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
