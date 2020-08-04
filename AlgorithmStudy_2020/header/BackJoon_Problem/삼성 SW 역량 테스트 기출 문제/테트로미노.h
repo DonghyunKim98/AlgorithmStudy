@@ -48,7 +48,9 @@ void solution() {
 			int temp1 = base + arr[i - 1][j];
 			int temp2 = base + arr[i - 1][j + 1];
 			int temp3 = base + arr[i - 1][j + 2];
-			answer = max(answer, max(max(temp1, temp2), temp3));
+			int temp4 = 0;
+			if (i == N && j <= M - 3) temp4 = base + arr[i][j + 3];
+			answer = max(answer, max(max(temp1, temp2),max(temp3,temp4)));
 		}
 	}
 	/*
@@ -79,7 +81,8 @@ void solution() {
 			int temp1 = base + arr[i][j - 1];
 			int temp2 = base + arr[i + 1][j - 1];
 			int temp3 = base + arr[i + 2][j - 1];
-			int temp4 = (j == M) ? base + arr[i + 3][j] : 0;
+			int temp4 = 0;
+			if (j == M && i <= N - 3)temp4 = base + arr[i + 3][j];
 			answer = max(answer, max(max(temp1, temp2), max(temp3, temp4)));
 		}
 	}
