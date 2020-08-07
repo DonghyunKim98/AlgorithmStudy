@@ -1,64 +1,129 @@
 #include <bits/stdc++.h>
-//15863번 문제
+//15683번 문제
 using namespace std;
-const int MAX = 8;
-int visited[MAX][MAX];
-int arr[MAX][MAX], brr[MAX][MAX];
+
+struct str {
+	int cctv; //cctv 종류
+	int y; //cctv y좌표
+	int x; //cctv x좌표
+	str(int cctv, int y, int x) :cctv(cctv), y(y), x(x) {};
+};
+
 int N, M;
-typedef struct {
-	int y, x;
-}Dir;
-//ESWN
-Dir moveDir[4] = { {1,0},{0,1},{-1,0},{0,-1} };
-Dir oneDir, twoDir[2], threeDir[3], fourDir[4] = { moveDir[0],moveDir[1],moveDir[3],moveDir[4] };
+int ans = 100; //사각 지대 최소값
+int cctv_cnt = 0; //cctv 개수
+vector<vector<int>> arr(8, vector<int>(8, 0)); //사무실
+vector<str> vec;
 
-void DFS(int ypos, int xpos) {
-	if (visited[ypos][xpos]) return;
-	visited[ypos][xpos] = true;
+void move(int dir, int y, int x) {
 
-	if (brr[ypos][xpos] == 1) {
-		int ny = ypos + oneDir.y, nx = xpos + oneDir.x;
-		if (0 <= ny && ny < N && 0 <= nx && nx < M) {
-			if (brr[ny][nx] != 6 && !visited[ypos][xpos]) {
-				brr[ny][nx] = brr[ypos][xpos];
-				DFS(ny, nx);
-			}
+	switch (dir) {
+
+	//북
+	case 0:
+		for (int i = y - 1; i >= 0; i--) {
+			if (arr[i][x] == 6) break;
+			if (arr[i][x] == 0) arr[i][x] = -1; //cctv 감시 완료
 		}
-	}
-	else if (brr[ypos][xpos] == 2) {
-		for (int k = 0; k < 2; k++) {
-			int ny = ypos + twoDir[k].y, nx = xpos + twoDir[k].x;
-			if (0 <= ny && ny < N && 0 <= nx && nx < M) {
-				if (brr[ny][nx] != 6 && !visited[ypos][xpos]) {
-					brr[ny][nx] = brr[ypos][xpos];
-					DFS(ny, nx);
-				}
-			}
+		break;
+
+	//동
+	case 1:
+		for (int j = x + 1; j < M; j++) {
+			if (arr[y][j] == 6) break;
+			if (arr[y][j] == 0) arr[y][j] = -1;
 		}
-	}
-	else if (brr[ypos][xpos] == 3) {
-		for (int k = 0; k < 3; k++) {
-			int ny = ypos + threeDir[k].y, nx = xpos + threeDir[k].x;
-			if (0 <= ny && ny < N && 0 <= nx && nx < M) {
-				if (brr[ny][nx] != 6 && !visited[ypos][xpos]) {
-					brr[ny][nx] = brr[ypos][xpos];
-					DFS(ny, nx);
-				}
-			}
+		break;
+
+	//남
+	case 2:
+		for (int i = y + 1; i < N; i++) {
+			if (arr[i][x] == 6) break;
+			if (arr[i][x] == 0) arr[i][x] = -1;
 		}
-	}
-	else {
-		for (int k = 0; k < 4; k++) {
-			int ny = ypos + fourDir[k].y, nx = xpos + fourDir[k].x;
-			if (0 <= ny && ny < N && 0 <= nx && nx < M) {
-				if (brr[ny][nx] != 6 && !visited[ypos][xpos]) {
-					brr[ny][nx] = brr[ypos][xpos];
-					DFS(ny, nx);
-				}
-			}
+		break;
+
+	//서
+	case 3:
+		for (int j = x - 1; j >= 0; j--) {
+			if (arr[y][j] == 6) break;
+			if (arr[y][j] == 0) arr[y][j] = -1;
 		}
+
 	}
+
 }
+
+void dfs(int step) {
+	if (step == cctv_cnt) {
+		int cnt = 0;
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if (arr[i][j] == 0)
+					cnt++;
+			}
+		}
+		ans = min(ans, cnt);
+		return;
+	}
+	int cctv = vec[step].cctv;
+	int y = vec[step].y;
+	int x = vec[step].x;
+	//백업용 배열 arr2
+	vector<vector<int>> arr2 = arr;
+	switch (cctv) {
+	case 1:
+		//북,동,남,서
+		for (int dir = 0; dir < 4; dir++) {
+			move(dir, y, x);
+			dfs(step + 1);
+			//BackTracking
+			arr = arr2;
+		}
+		break;
+
+	case 2:
+		//북남,동서
+		for (int dir = 0; dir < 2; dir++) {
+			move(dir, y, x);
+			move(dir + 2, y, x);
+			dfs(step + 1);
+			//BackTracking
+			arr = arr2;
+		}
+		break;
+
+	case 3:
+		//북동,동남,남서,서북
+		for (int dir = 0; dir < 4; dir++) {
+			move(dir, y, x);
+			move((dir + 1) % 4, y, x);
+			dfs(step + 1);
+			//BackTracking
+			arr = arr2;
+		}
+		break;
+
+	case 4:
+		//북동남,동남서,남서북,서북동
+		for (int dir = 0; dir < 4; dir++) {
+			move(dir, y, x);
+			move((dir + 1) % 4, y, x);
+			move((dir + 2) % 4, y, x);
+			dfs(step + 1);
+			//BackTracking
+			arr = arr2;
+		}
+		break;
+
+	case 5:
+		for (int dir = 0; dir < 4; dir++)
+			move(dir, y, x);
+		dfs(step + 1);
+	}
+
+}
+
 
 void solution() {
 	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -66,32 +131,21 @@ void solution() {
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
 			cin >> arr[i][j];
-		}
-	}
-	copy(&arr[0][0], &arr[0][0] + (MAX) * (MAX), &brr[0][0]);
-	int answer = 0;
-	for (int i = 0; i < 4; i++) {
-		oneDir = moveDir[i];
-		for (int j = 0; j < 2; j++) {
-			twoDir[0] = moveDir[j]; twoDir[1] = moveDir[j + 2];
-			for (int k = 0; k < 4; k++) {
-				threeDir[0] = moveDir[k]; threeDir[1] = moveDir[k + 1 % 4]; threeDir[2] = moveDir[k + 2 % 4];
-				int zero_cnt = 0; memset(visited, false, sizeof(visited));
-				for (int f = 0; f < N; f++) {
-					for (int g = 0; g < M; g++) {
-						if (!visited[f][g] && 0 < brr[f][g] && brr[f][g] < 6)
-							DFS(f, g);
-					}
-				}
-				for (int f = 0; f < N; f++) {
-					for (int g = 0; g < M; g++) {
-						if (brr[f][g] == 0) zero_cnt++;
-					}
-				}
-				answer = max(answer, zero_cnt);
-				copy(&arr[0][0], &arr[0][0] + (MAX) * (MAX), &brr[0][0]);
+			if (arr[i][j] != 0 && arr[i][j] != 6) {
+				cctv_cnt++;
+				vec.push_back(str(arr[i][j], i, j));
 			}
 		}
 	}
-	cout << answer;
+	dfs(0);
+	cout << ans << endl;
 }
+
+/*
+	알고리즘 포인트
+	1. cctv끼리 겹쳤을때 어떻게 통과할 것인가에 대한 구현
+	-> move함수를 통해 6만 아니라면 그냥 쭉 통과하게 한다
+	-> "1번 cctv로 감시했다 => 1로 표시" 라는 고정관념에서 탈출하면 된다.
+
+	2. 지금까지 난 arr2를 실제 돌리는 배열로 했지만, 여기선 백업용 배열로 arr2를 썼다.
+*/
