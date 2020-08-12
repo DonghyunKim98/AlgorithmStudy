@@ -64,8 +64,10 @@ void move(shark Shark) {
 		shark next = Shark_Move(Shark, cnt);
 		if (next.y == -1) return;
 		else if(next.y!= -2) move(next);
+
 		//backTracking
 		copy(&brr[0][0], &brr[0][0] + (4) * (4), &arr[0][0]);
+
 		cnt++;
 	}
 }
