@@ -231,6 +231,7 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\감시.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\경사로.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\구슬 탈출 2.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\나무 재태크.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\로봇 청소기.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\뱀.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\사다리 조작.h" />
