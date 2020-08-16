@@ -241,6 +241,7 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\인구 이동.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\주사위 굴리기.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\청소년 상어.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\치킨 배달.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\테트로미노.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\톱니바퀴.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\퇴사.h" />

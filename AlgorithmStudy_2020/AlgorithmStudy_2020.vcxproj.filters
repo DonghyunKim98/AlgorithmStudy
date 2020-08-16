@@ -739,5 +739,8 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\나무 재태크.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\치킨 배달.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
