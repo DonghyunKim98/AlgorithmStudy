@@ -34,7 +34,7 @@ void DFS(int idx, int depth) {
 	for (int k = idx; k < chicken.size(); k++) {
 		yes_chicken.push_back(chicken[k]);
 		DFS(k + 1, depth + 1);
-		yes_chicken.erase(yes_chicken.end() - 1);
+		yes_chicken.pop_back();
 	}
 }
 
