@@ -1,84 +1,193 @@
-#include <bits/stdc++.h>
-//17143¹ø ¹®Á¦
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
+#define endl "\n"
+#define MAX 100 + 1
 using namespace std;
-const int MAX = 100;
-typedef struct {
-	int speed, dir, size;
-}shark;
-int R, C, M;
-vector<shark> shark_vc[MAX][MAX];
-int dy[4] = { -1,1,0,0 };
-int dx[4] = { 0,0,1,-1 };
-int hunt(int col) {
-	int idx = 0;
-	while (idx < R) {
-		if (shark_vc[idx][col].size()) {
-			int ret = shark_vc[idx][col][0].size; shark_vc[idx][col].pop_back();
-			return ret;
-		}
-		idx++;
-	}
-	return 0;
+
+struct Shark_Info
+{
+    int R;
+    int C;
+    int Speed;
+    int Direct;
+    int Size;
+    int Num;
+};
+
+int R, C, M, Answer;
+vector<int> MAP[MAX][MAX];
+vector<Shark_Info> Shark;
+
+int dx[] = { 0, -1, 1, 0, 0 };
+int dy[] = { 0, 0, 0, 1, -1 };
+
+bool Standard(int A, int B)
+{
+    if (Shark[A].Size > Shark[B].Size) return true;
+    return false;
 }
 
-void move() {
-	for (int ypos = 0; ypos < R; ypos++) {
-		for (int xpos = 0; xpos < C; xpos++) {
-			if (shark_vc[ypos][xpos].size() == 0) continue;
-			shark cur = shark_vc[ypos][xpos].front();
-			int ny = ypos + (dy[cur.dir] * cur.speed), nx = xpos + (dx[cur.dir] * cur.speed);
-			while (!(0 <= ny && ny < R && 0 <= nx && nx < C)) {
-				if (ny < 0) {
-					ny *= -1;
-					cur.dir = 1;
-				}
-				else if (R <= ny) {
-					ny = 2 * (R - 1) - ny;
-					cur.dir = 0;
-				}
-				else if (nx < 0) {
-					nx *= -1;
-					cur.dir = 3;
-				}
-				else if (C <= nx) {
-					nx = 2 * (C - 1) - nx;
-					cur.dir = 4;
-				}
-			}
-			shark_vc[ny][nx].push_back(cur);
-			shark_vc[ypos][xpos].erase(shark_vc[ypos][xpos].begin());
-		}
-	}
+void Input()
+{
+    cin >> R >> C >> M;
+    for (int i = 0; i < M; i++)
+    {
+        int r, c, s, d, z;
+        cin >> r >> c >> s >> d >> z;
+        Shark.push_back({ r,c,s,d,z,i });
+        MAP[r][c].push_back(i);
+    }
 }
 
-void is_duplicate() {
-	for (int ypos = 0; ypos < R; ypos++) {
-		for (int xpos = 0; xpos < C; xpos++) {
-			if (shark_vc[ypos][xpos].size() == 0 || shark_vc[ypos][xpos].size() == 1) continue;
-			while (shark_vc[ypos][xpos].size() != 1) {
-				if (shark_vc[ypos][xpos][0].size > shark_vc[ypos][xpos][1].size)
-					shark_vc[ypos][xpos].erase(shark_vc[ypos][xpos].begin() + 1);
-				else shark_vc[ypos][xpos].erase(shark_vc[ypos][xpos].begin());
-			}
-		}
-	}
+bool Check()
+{
+    for (int i = 0; i < Shark.size(); i++)
+    {
+        if (Shark[i].Size != 0) return false;
+    }
+    return true;
 }
-void solution() {
-	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	cin >> R >> C >> M;
-	for (int i = 0; i < M; i++) {
-		int ypos, xpos, speed, dir, size;
-		cin >> ypos >> xpos >> speed >> dir >> size;
-		if (dir == 1 || dir == 2) speed %= ((C * 2) - 1);
-		else speed %= ((R * 2) - 1);
-		shark_vc[ypos-1][xpos-1].push_back({ speed,dir-1,size });
-	}
-	int current_column = -1, answer = 0;
-	while (current_column < C) {
-		current_column++;
-		answer += hunt(current_column);
-		move();
-		is_duplicate();
-	}
-	cout << answer;
+
+void Fishing(int Idx)
+{
+    for (int i = 1; i <= R; i++)
+    {
+        if (MAP[i][Idx].size() != 0)
+        {
+            Answer = Answer + Shark[MAP[i][Idx][0]].Size;
+            Shark[MAP[i][Idx][0]].Size = 0;
+            MAP[i][Idx].clear();
+            break;
+        }
+    }
+}
+
+void Move_Shark()
+{
+    for (int i = 0; i < Shark.size(); i++)
+    {
+        if (Shark[i].Size == 0) continue;
+        int x = Shark[i].R;
+        int y = Shark[i].C;
+        MAP[x][y].clear();
+    }
+
+    for (int i = 0; i < Shark.size(); i++)
+    {
+        if (Shark[i].Size == 0) continue;
+        int x = Shark[i].R;
+        int y = Shark[i].C;
+        int Direct = Shark[i].Direct;
+        int Speed = Shark[i].Speed;
+
+        if (Direct == 1 || Direct == 2)
+        {
+            int Rotate = (R - 1) * 2;
+            if (Speed >= Rotate) Speed = Speed % Rotate;
+
+            for (int j = 0; j < Speed; j++)
+            {
+                int nx = x + dx[Direct];
+                int ny = y + dy[Direct];
+                if (nx < 1)
+                {
+                    Direct = 2;
+                    nx = nx + 2;
+                }
+                if (nx > R)
+                {
+                    Direct = 1;
+                    nx = nx - 2;
+                }
+                x = nx;
+                y = ny;
+            }
+        }
+        else
+        {
+            int Rotate = (C - 1) * 2;
+            if (Speed >= Rotate) Speed = Speed % Rotate;
+
+            for (int j = 0; j < Speed; j++)
+            {
+                int nx = x + dx[Direct];
+                int ny = y + dy[Direct];
+                if (ny < 1)
+                {
+                    Direct = 3;
+                    ny = ny + 2;
+                }
+                if (ny > C)
+                {
+                    Direct = 4;
+                    ny = ny - 2;
+                }
+                x = nx;
+                y = ny;
+            }
+        }
+
+        Shark[i].R = x;
+        Shark[i].C = y;
+        Shark[i].Direct = Direct;
+        MAP[x][y].push_back(i);
+    }
+}
+
+void Kill_Shark()
+{
+    for (int i = 1; i <= R; i++)
+    {
+        for (int j = 1; j <= C; j++)
+        {
+            if (MAP[i][j].size() > 1)
+            {
+                sort(MAP[i][j].begin(), MAP[i][j].end(), Standard);
+                int Live_Index = MAP[i][j][0];
+                for (int k = 1; k < MAP[i][j].size(); k++)
+                {
+                    Shark[MAP[i][j][k]].Size = 0;
+                    Shark[MAP[i][j][k]].R = -1;
+                    Shark[MAP[i][j][k]].C = -1;
+                }
+                MAP[i][j].clear();
+                MAP[i][j].push_back(Shark[Live_Index].Num);
+            }
+        }
+    }
+}
+
+void Solution()
+{
+    if (M == 0)
+    {
+        cout << 0 << endl;
+        return;
+    }
+    for (int i = 1; i <= C; i++)
+    {
+        if (Check() == true) break;
+        Fishing(i);
+        Move_Shark();
+        Kill_Shark();
+    }
+    cout << Answer << endl;
+}
+
+void Solve()
+{
+    Input();
+    Solution();
+}
+
+int main(void)
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    Solve();
+
+    return 0;
 }
