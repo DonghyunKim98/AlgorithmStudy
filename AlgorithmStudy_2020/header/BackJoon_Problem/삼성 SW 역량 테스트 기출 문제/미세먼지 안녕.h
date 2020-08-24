@@ -22,10 +22,10 @@ void spread() {
 				int cnt = 0;
 				for (int k = 0; k < 4; k++) {
 					int ny = i + dy[k], nx = j + dx[k];
-					if (0 <= ny && ny < C && 0 <= nx && nx < R)
+					if (0 <= ny && ny < R && 0 <= nx && nx < C)
 						if (arr[ny][nx] != -1) {
 							cnt++;
-							brr[ny][nx] += arr[i][j] / 5;
+							brr[ny][nx] += (arr[i][j] / 5);
 						}
 				}
 				//확산 이후 남은 미세먼지 양 계산
@@ -39,6 +39,7 @@ void spread() {
 			arr[i][j] += brr[i][j];
 		}
 	}
+	arr[0][0];
 }
 
 void cleaning() {
