@@ -246,6 +246,7 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\연구소 3-Unsolved.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\연구소-모범.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\연구소.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\원판 돌리기.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\이차원 배열과 연산.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\인구 이동.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\주사위 굴리기.h" />
@@ -393,6 +394,7 @@
     <ClInclude Include="header\programmers\Stack Queue\탑.h" />
     <ClInclude Include="header\programmers\Stack Queue\프린터.h" />
     <ClInclude Include="header\programmers\단체사진 찍기.h" />
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\큐빙.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

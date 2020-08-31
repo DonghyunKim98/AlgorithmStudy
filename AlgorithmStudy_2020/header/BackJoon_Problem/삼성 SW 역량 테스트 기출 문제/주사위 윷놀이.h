@@ -22,7 +22,7 @@ bool change_position(int idx, int cnt) {
 	}
 	else if (16 <= temp && temp <= 19) {
 		if (position[idx] + dice_result[cnt] == 20) position[idx] = 31;
-		else if (position[idx] + dice_result[cnt] > 21) position[idx] = 32;
+		else if (position[idx] + dice_result[cnt] >= 21) position[idx] = 32;
 		else position[idx] += dice_result[cnt];
 	}
 	else if (20 <= temp && temp <= 22) {
@@ -30,7 +30,7 @@ bool change_position(int idx, int cnt) {
 		else position[idx] += dice_result[cnt];
 	}
 	else if (temp == 23 || temp == 24) {
-		if (24 <= dice_result[cnt] + temp) position[idx] += 3 + dice_result[cnt];
+		if (25 <= dice_result[cnt] + temp) position[idx] += 3 + dice_result[cnt];
 		else position[idx] += dice_result[cnt];
 	}
 	else position[idx] += dice_result[cnt];
@@ -72,3 +72,7 @@ void solution() {
 	DFS(0, 0);
 	cout << ans;
 }
+
+/*
+	하드코딩..ㄹㅇ
+*/
