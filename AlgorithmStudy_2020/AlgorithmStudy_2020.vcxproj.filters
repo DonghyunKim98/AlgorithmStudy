@@ -748,9 +748,6 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\미세먼지 안녕.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\어른 상어-Unsolved.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\낚시왕-Unsolved.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -785,6 +782,33 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\드래곤 커브.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\어른 상어.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\숫자 카드.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\큐.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\에디터.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\보물.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\중복 빼고 정렬하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\요세푸스 문제.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\로또.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\부분수열의 합.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

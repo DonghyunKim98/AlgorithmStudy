@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 //19237번 문제
 using namespace std;
-const int MAX = 20 + 1;
+const int MAX = 25;
 typedef struct {
 	int ypos, xpos;
 }point;
 typedef struct {
 	int smell_idx, smell_left;
 }smell;
-vector<pair<point, int>> shark(MAX);
+vector<pair<point, int>> shark((MAX* MAX));
 int MAP[MAX][MAX], shark_cnt_MAP[MAX][MAX];
-vector<int> eliminated_shark_idx;
+bool lived_shark[MAX];
 smell smell_MAP[MAX][MAX];
 vector<vector<int>> shark_priority[MAX * MAX];
 int N, M, K;
@@ -21,23 +21,13 @@ int cnt;
 
 void make_smell() {
 	for (int i = 1; i <= M; i++) {
-		//해당 차례가 끝나는 턴에 냄새를 없애줄 것이므로.
-		smell_MAP[shark[i].first.ypos][shark[i].first.xpos] = { i, K };
+		if (!lived_shark[i]) continue;
+		smell_MAP[shark[i].first.ypos][shark[i].first.xpos] = { i,K };
 	}
 }
-
 void move() {
-	make_smell();
 	for (int idx = 1; idx <= M; idx++) {
-		//제거된 상어인지 확인
-		bool is_eliminated = false;
-		for (auto u : eliminated_shark_idx) {
-			if (idx == u) {
-				is_eliminated = true;
-				break;
-			}
-		}
-		if (is_eliminated) continue;
+		if (!lived_shark[idx]) continue;
 
 		int py = shark[idx].first.ypos, px = shark[idx].first.xpos, p_dir = shark[idx].second;
 		int ny = 0, nx = 0, n_dir = 0;
@@ -70,27 +60,29 @@ void move() {
 		shark[idx].first.ypos = ny, shark[idx].first.xpos = nx, shark[idx].second = n_dir;
 	}
 }
-
 void eliminate() {
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
 			if (shark_cnt_MAP[i][j] == 0 || shark_cnt_MAP[i][j] == 1) continue;
 			int min_idx = M + 1;
 			for (int k = 1; k <= M; k++) {
+				if (!lived_shark[k]) continue;
 				//해당위치에 있는 상어 일때
 				if (shark[k].first.ypos == i && shark[k].first.xpos == j) {
 					//idx가 최솟값이 아니라면
 					if (k > min_idx) {
-						eliminated_shark_idx.push_back(k);
+						lived_shark[k] = false;
 						cnt--;
 					}
-					else min_idx = k;
+					//어차피 상어의 idx가 1부터 시작하기때문에 역순이 될 상황 생각 X
+					else {
+						min_idx = k;
+					}
 				}
 			}
 		}
 	}
 }
-
 void smell_down() {
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
@@ -101,7 +93,6 @@ void smell_down() {
 		}
 	}
 }
-
 void input() {
 	cin >> N >> M >> K;
 	for (int i = 1; i <= N; i++) {
@@ -110,6 +101,7 @@ void input() {
 			if (MAP[i][j]) {
 				shark[MAP[i][j]] = { {i,j},0 };
 				shark_cnt_MAP[i][j] = 1;
+				lived_shark[MAP[i][j]] = true;
 			}
 		}
 	}
@@ -134,6 +126,15 @@ void input() {
 	}
 }
 
+//void debug(int turn) {
+//	cout << turn << "번째\n";
+//	for (int i = 1; i <= M; i++) {
+//		if (!lived_shark[i]) continue;
+//		cout << i << "상어 :[" << shark[i].first.ypos << ',' << shark[i].first.xpos << "]\n";
+//	}
+//	cout << '\n';
+//}
+
 
 void solution() {
 	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -142,9 +143,11 @@ void solution() {
 	cnt = M;
 	while (ans <= 1000) {
 		ans++;
+		make_smell();
 		move();
 		eliminate();
 		smell_down();
+		//debug(ans);
 		if (cnt == 1) break;
 	}
 	if (ans > 1000) cout << -1;

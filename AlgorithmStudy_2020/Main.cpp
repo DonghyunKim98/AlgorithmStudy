@@ -1,4 +1,4 @@
-﻿#include "header/BackJoon_Problem/삼성 SW 역량 테스트 기출 문제/어른 상어-Unsolved.h"
+﻿#include "header/BackJoon_Problem/BOJ 길라잡이/부분수열의 합.h"
 #include <iostream>
 using namespace std;
 
