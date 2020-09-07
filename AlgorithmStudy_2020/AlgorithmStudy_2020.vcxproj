@@ -148,12 +148,15 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\1, 2, 3 더하기.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\로또.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\보물.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\부분수열의 합.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\소수의 연속합.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\숫자 카드.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\에디터.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\요세푸스 문제.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\좋은수열.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\중복 빼고 정렬하기.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\큐.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
@@ -237,6 +240,7 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\최소 스패닝 트리.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\행성 터널.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\2048(EASY).h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\가로수.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\감시.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\게리맨더링2.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\경사로.h" />

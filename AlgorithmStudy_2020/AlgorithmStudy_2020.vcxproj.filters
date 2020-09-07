@@ -811,5 +811,17 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\부분수열의 합.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\1, 2, 3 더하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\좋은수열.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\가로수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\소수의 연속합.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
