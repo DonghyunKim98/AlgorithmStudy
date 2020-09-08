@@ -823,5 +823,17 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\소수의 연속합.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\골드바흐의 추측.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\환상의 짝꿍.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\제곱 ㄴㄴ수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\텀 프로젝트.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

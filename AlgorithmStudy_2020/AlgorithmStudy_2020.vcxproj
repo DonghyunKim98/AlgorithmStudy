@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\1, 2, 3 더하기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\골드바흐의 추측.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\로또.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\보물.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\부분수열의 합.h" />
@@ -156,9 +157,12 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\숫자 카드.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\에디터.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\요세푸스 문제.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\제곱 ㄴㄴ수.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\좋은수열.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\중복 빼고 정렬하기.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\큐.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\텀 프로젝트.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\환상의 짝꿍.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\도미노 예측.h" />
