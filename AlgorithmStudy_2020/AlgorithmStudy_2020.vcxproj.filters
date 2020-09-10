@@ -850,5 +850,17 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\카드 구매하기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\1번.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\3번.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\2번.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\4번.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

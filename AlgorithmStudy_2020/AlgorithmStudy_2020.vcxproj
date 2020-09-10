@@ -419,6 +419,10 @@
     <ClInclude Include="header\programmers\Stack Queue\프린터.h" />
     <ClInclude Include="header\programmers\단체사진 찍기.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\큐빙.h" />
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\1번.h" />
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\2번.h" />
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\3번.h" />
+    <ClInclude Include="header\programmers\월간코드챌린지\9월\4번.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
