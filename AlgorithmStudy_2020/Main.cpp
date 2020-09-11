@@ -1,7 +1,7 @@
-﻿#include "header/programmers/월간코드챌린지/9월/1번.h"
+﻿#include "header/BackJoon_Problem/BOJ 길라잡이/숫자의 신.h"
 #include <iostream>
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	solution({ 0,1 });
+	solution();
 }
