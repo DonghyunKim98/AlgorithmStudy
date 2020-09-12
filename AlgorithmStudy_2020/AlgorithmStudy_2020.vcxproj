@@ -170,6 +170,7 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\중복 빼고 정렬하기.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\치즈.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\카드 구매하기.h" />
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\카드 정렬하기.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\큐.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\텀 프로젝트.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\환상의 짝꿍.h" />

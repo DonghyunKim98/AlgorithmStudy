@@ -877,5 +877,8 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\숫자의 신.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\카드 정렬하기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
