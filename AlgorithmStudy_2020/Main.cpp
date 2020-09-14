@@ -1,4 +1,4 @@
-﻿#include "header/BackJoon_Problem/BOJ 길라잡이/카드 정렬하기.h"
+﻿#include "header/BackJoon_Problem/BOJ 길라잡이/보석 도둑.h"
 #include <iostream>
 using namespace std;
 

@@ -6,55 +6,36 @@ vector<string> vc;
 
 bool cmp(string a, string b) {
 	if (a == b) return a < b;
-	//substr인지 확인
-	if (a.length() > b.length()) {
-		if (a.substr(0,b.length()) == b) return a.length() > b.length();
-	}
-	else if (a.length() < b.length()) {
-		if (b.substr(0,a.length()) == a) return a.length() > b.length();
-	}
-
-	int a_idx = 0, b_idx = 0;
-	while (true) {
-		if (a_idx == a.length()) a_idx = 0;
-		if (b_idx == b.length()) b_idx = 0;
-		if (a[a_idx] == b[b_idx]) {
-			a_idx++; b_idx++;
-		}
-		else {
-			return a[a_idx] > b[b_idx];
-		}
-	}
-
+	if (a + b == b + a) return a.length() > b.length();
+	else return a + b > b + a;
 }
 
 void solution() {
 	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 	cin >> K >> N;
-	int longest_size = 0;
+	int max_num = 0;
 	for (int i = 0; i < K; i++) {
 		string temp;
 		cin >> temp;
 		vc.push_back(temp);
-		longest_size = max(longest_size, (int)temp.size());
+		max_num = max(max_num, stoi(temp));
 	}
 	sort(vc.begin(), vc.end(), cmp);
 	string answer;
-	bool long_and_max = false;
+	bool is_max_used = false;
 	for (int i = 0; i < K; i++) {
-		if (vc[i].length() == longest_size) {
-			if (!long_and_max) {
-				for (int j = 0; j < N - K + 1; j++) {
-					answer += vc[i];
-				}
-				long_and_max = true;
-				continue;
+		if (stoi(vc[i]) == max_num&& !is_max_used) {
+			for (int j = 0; j < N - K + 1; j++) {
+				answer += vc[i];
 			}
+			is_max_used = true;
+			continue;
 		}
 		answer += vc[i];
 	}
 	cout << answer;
 }
+
 
 /*
 	<1단계 생각>
@@ -76,4 +57,9 @@ void solution() {
 		1. 부분적으로 반복되는 수가 cmp에서 infinite loop를 돈다
 			ex) 123 과 123123
 
+
+	<4단계 생각>
+		1.결국 다시 돌고 돌아서 정렬이 제대로 이루어지지 않고 계속 예외가 발생해서
+		  a+b와 b+a중 더 큰값으로 정렬하면 된다. =>핵심!
+		2.만약 2개가 같다면, 더 자릿수가 큰 값이 앞으로 가면 된다.
 */
