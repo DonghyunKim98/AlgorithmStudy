@@ -177,6 +177,14 @@
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\큐.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\텀 프로젝트.h" />
     <ClInclude Include="header\BackJoon_Problem\BOJ 길라잡이\환상의 짝꿍.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\%27나교수%27 교수님의 악필.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\13일의 금요일.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Bookend.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Cupid.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\가주아.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\독서의 계절.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\듀얼 채널 VHF 무전기.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\콘서트.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\도미노 예측.h" />
@@ -252,6 +260,8 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\KCM Travel.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\미확인 도착지.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\운동.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\색종이 만들기.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\쿼드트리.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\별자리 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\상근이의 여행.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\우주신과의 교감.h" />
