@@ -184,6 +184,8 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\가주아.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\독서의 계절.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\듀얼 채널 VHF 무전기.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\병아리의 변신은 무죄.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\소년 점프.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\콘서트.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />

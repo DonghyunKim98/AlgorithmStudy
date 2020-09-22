@@ -919,5 +919,11 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Bookend.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\소년 점프.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\병아리의 변신은 무죄.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
