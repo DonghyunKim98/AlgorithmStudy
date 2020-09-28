@@ -29,9 +29,6 @@
     <ClCompile Include="Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Foo.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="소스.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -932,6 +929,24 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\고냥이.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\수학 미로.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\종이의 개수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\곱셈.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\이항 계수 3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\행렬 곱셈.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

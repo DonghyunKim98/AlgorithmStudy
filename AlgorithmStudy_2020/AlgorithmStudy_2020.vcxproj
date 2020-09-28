@@ -143,7 +143,6 @@
     <None Include="vc140.pdb" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Foo.cpp" />
     <ClCompile Include="소스.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
@@ -188,8 +187,10 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\듀얼 채널 VHF 무전기.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\병아리의 변신은 무죄.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\소년 점프.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\수학 미로.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\작은 수 내기.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\콘서트.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\도미노 예측.h" />
@@ -265,8 +266,12 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\KCM Travel.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\미확인 도착지.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\Graph\최단경로\운동.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\곱셈.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\색종이 만들기.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\이항 계수 3.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\종이의 개수.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\쿼드트리.h" />
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\행렬 곱셈.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\별자리 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\상근이의 여행.h" />
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\최소 신장 트리\우주신과의 교감.h" />
