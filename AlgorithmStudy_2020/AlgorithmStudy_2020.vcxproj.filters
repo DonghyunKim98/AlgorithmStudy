@@ -949,5 +949,8 @@
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\행렬 곱셈.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\행렬 제곱.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

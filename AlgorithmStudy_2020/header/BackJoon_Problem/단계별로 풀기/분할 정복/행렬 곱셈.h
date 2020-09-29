@@ -22,7 +22,7 @@ void solution() {
 
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < K; j++) {
-			for (int k = 0; k < N; k++) {
+			for (int k = 0; k < M; k++) {
 				crr[i][j] += (arr[i][k] * brr[k][j]);
 			}
 		}
