@@ -913,13 +913,7 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\듀얼 채널 VHF 무전기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Bookend.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\소년 점프.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\병아리의 변신은 무죄.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\작은 수 내기.h">
@@ -932,9 +926,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\수학 미로.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\종이의 개수.h">
@@ -950,6 +941,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="header\BackJoon_Problem\단계별로 풀기\분할 정복\행렬 제곱.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\MooTube(Silver).h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Watering the Fields.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -179,18 +179,15 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\%27나교수%27 교수님의 악필.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\13일의 금요일.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\A Homogeneous Country.h" />
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Bookend.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\Cupid.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\가주아.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\고냥이.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\독서의 계절.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\듀얼 채널 VHF 무전기.h" />
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\병아리의 변신은 무죄.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\소년 점프.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\수학 미로.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\작은 수 내기.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\콘서트.h" />
-    <ClInclude Include="header\BackJoon_Problem\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\도미노 예측.h" />
@@ -310,6 +307,8 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\테트로미노.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\톱니바퀴.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\퇴사.h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\MooTube(Silver).h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Watering the Fields.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
     <ClInclude Include="header\programmers\Binary Search\징검다리.h" />
