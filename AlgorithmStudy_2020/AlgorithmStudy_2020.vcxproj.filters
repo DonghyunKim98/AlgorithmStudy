@@ -949,5 +949,8 @@
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Watering the Fields.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\새로운 게임.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
