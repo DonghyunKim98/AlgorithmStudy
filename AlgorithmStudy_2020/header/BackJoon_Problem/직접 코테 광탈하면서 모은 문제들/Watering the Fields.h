@@ -51,7 +51,7 @@ void solution() {
 		}
 	}
 
-	if (cnt==N-1) cout << sum;
+	if (cnt==N-1) cout << sum; 
 	else cout << -1;
 }
 
