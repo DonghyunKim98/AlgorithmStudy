@@ -958,5 +958,8 @@
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\괄호 추가하기 3.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\인터넷 설치.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

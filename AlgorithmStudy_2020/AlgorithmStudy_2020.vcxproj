@@ -312,6 +312,7 @@
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\MooTube(Silver).h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Watering the Fields.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\새로운 게임.h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\인터넷 설치.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
     <ClInclude Include="header\programmers\Binary Search\징검다리.h" />
