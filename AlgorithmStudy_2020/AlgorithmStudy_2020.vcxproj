@@ -307,11 +307,13 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\테트로미노.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\톱니바퀴.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\퇴사.h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Island Travel.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\괄호 추가하기 3.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\미네랄 2.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\MooTube(Silver).h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Watering the Fields.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\새로운 게임.h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\소가 길을 건너간 이유 6.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\인터넷 설치.h" />
     <ClInclude Include="header\programmers\Binary Search\예산.h" />
     <ClInclude Include="header\programmers\Binary Search\입국심사.h" />
