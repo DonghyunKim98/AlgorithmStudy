@@ -967,5 +967,11 @@
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Island Travel.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\What%27s Up With Gravity.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\뜨끈한 돼지국밥.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

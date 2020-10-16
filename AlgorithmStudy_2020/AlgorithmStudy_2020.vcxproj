@@ -192,6 +192,7 @@
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\도미노 예측.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\디저트.h" />
+    <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\뜨끈한 돼지국밥.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\상남자 곽철용.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\스노우볼.h" />
     <ClInclude Include="header\BackJoon_Problem\Contest\제6회 한양대학교 프로그래밍\알고리즘 공부.h" />
@@ -308,6 +309,7 @@
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\톱니바퀴.h" />
     <ClInclude Include="header\BackJoon_Problem\삼성 SW 역량 테스트 기출 문제\퇴사.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\Island Travel.h" />
+    <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\What%27s Up With Gravity.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\괄호 추가하기 3.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\미네랄 2.h" />
     <ClInclude Include="header\BackJoon_Problem\직접 코테 광탈하면서 모은 문제들\MooTube(Silver).h" />
