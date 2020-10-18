@@ -8,10 +8,6 @@ int N, ans=0;
 int maxCache[MAX][MAX];
 int minCache[MAX][MAX];
 
-void DFS() {
-
-}
-
 int cal(int a, int b, char op) {
 	switch (op) {
 	case '+':

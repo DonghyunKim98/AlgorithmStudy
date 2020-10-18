@@ -23,6 +23,7 @@
     <ProjectGuid>{67D46853-FB7A-4ED9-B0B6-AB162D42FFA7}</ProjectGuid>
     <RootNamespace>AlgorithmStudy2020</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AlgorithmStudy</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
