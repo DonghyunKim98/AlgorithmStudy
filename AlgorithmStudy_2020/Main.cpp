@@ -1,4 +1,4 @@
-﻿#include "header/BOJ/직접 코테 광탈하면서 모은 문제들/What's Up With Gravity.h"
+﻿#include "header/BOJ/etc/Binary Search/제자리 멀리뛰기.h"
 #include <iostream>
 using namespace std;
 
