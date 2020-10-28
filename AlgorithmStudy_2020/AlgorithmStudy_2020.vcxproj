@@ -189,6 +189,7 @@
     <ClInclude Include="header\BOJ\Contest\제5회 한양대학교 프로그래밍\수학 미로.h" />
     <ClInclude Include="header\BOJ\Contest\제5회 한양대학교 프로그래밍\작은 수 내기.h" />
     <ClInclude Include="header\BOJ\Contest\제5회 한양대학교 프로그래밍\콘서트.h" />
+    <ClInclude Include="header\BOJ\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h" />
     <ClInclude Include="header\BOJ\Contest\제6회 한양대학교 프로그래밍\Drop the Byte!.h" />
     <ClInclude Include="header\BOJ\Contest\제6회 한양대학교 프로그래밍\Gazzzua.h" />
     <ClInclude Include="header\BOJ\Contest\제6회 한양대학교 프로그래밍\과제는 끝나지 않아!.h" />

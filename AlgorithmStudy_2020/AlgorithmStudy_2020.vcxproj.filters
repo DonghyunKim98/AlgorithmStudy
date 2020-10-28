@@ -994,5 +994,8 @@
     <ClInclude Include="header\BOJ\삼성 SW 역량 테스트 기출 문제\마법사 상어와 파이어볼.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\BOJ\Contest\제5회 한양대학교 프로그래밍\팰린드롬 만들기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

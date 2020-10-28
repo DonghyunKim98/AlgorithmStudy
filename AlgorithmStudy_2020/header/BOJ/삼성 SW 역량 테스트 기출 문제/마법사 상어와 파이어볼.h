@@ -4,7 +4,7 @@ using namespace std;
 #define MAX 51
 typedef pair<int, int> pii;
 typedef struct {
-	int ypos, xpos, mass, d, speed;
+	int ypos, xpos, mass, speed, d;
 }fireBall;
 vector<fireBall> vc;
 int N, M, K;
@@ -39,8 +39,8 @@ void move() {
 			}
 			if (isBreak) break;
 		}
-		cur.ypos = ny, cur.xpos = nx;
-		MAP[cur.ypos][cur.xpos]++;
+		vc[i].ypos = ny, vc[i].xpos = nx;
+		MAP[ny][nx]++;
 	}
 }
 
@@ -48,35 +48,39 @@ void check() {
 	for (int i = 1; i <= N; i++) for (int j = 1; j <= N; j++) {
 		if (MAP[i][j] <= 1) continue;
 		fireBall temp = { i,j,0,0,0 };
-		int size = vc.size();
-		int prevDir = -1;
+		int prevDir = -1, cnt = MAP[i][j];
 		bool isSameDir = true;
-		for (int i = 0; i < size; i++) {
-			if (!(vc[i].ypos == i && vc[i].xpos == j)) continue;
-			if (prevDir == -1) prevDir = vc[i].d % 2;
-			else prevDir == vc[i].d % 2 ? isSameDir = true : isSameDir = false;
-			temp.mass += vc[i].mass, temp.speed += vc[i].mass;
-			vc.erase(vc.begin() + i);
+		for (int k = 0; k < vc.size(); k++) {
+			if (!(vc[k].ypos == i && vc[k].xpos == j)) continue;
+			if (prevDir == -1) prevDir = vc[k].d % 2;
+			else prevDir == vc[k].d % 2 ? isSameDir = true : isSameDir = false;
+			temp.mass += vc[k].mass, temp.speed += vc[k].mass;
+			vc.erase(vc.begin() + k);
+			k--;
 		}
-		if (temp.mass < 5) continue;
+		if (temp.mass < 5) {
+			MAP[i][j] = 0;
+			continue;
+		}
+		MAP[i][j] = 4;
 		for (int k = 0; k < 4; k++) {
 			// 0 2 4 6
 			if (isSameDir) {
 				vc.push_back(
-					{ temp.ypos + dir[k * 2].first,
-					  temp.xpos + dir[k * 2].second,
-					  temp.mass/5,
-					  k*2,
-					  temp.speed/5});
+					{ temp.ypos ,
+					  temp.xpos ,
+					  temp.mass / 5,
+					  temp.speed / cnt,
+					  k * 2 });
 			}
 			// 1 3 5 7
 			else {
 				vc.push_back(
-					{ temp.ypos + dir[k * 2 + 1].first,
-					  temp.xpos + dir[k * 2 + 1].second,
+					{ temp.ypos ,
+					  temp.xpos ,
 					  temp.mass / 5,
-					  k * 2 + 1,
-					  temp.speed / 5 });
+					  temp.speed / cnt,
+					  k * 2 });
 			}
 		}
 	}
@@ -92,9 +96,9 @@ void solution() {
 	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 	cin >> N >> M >> K;
 	for (int i = 0; i < M; i++) {
-		int ypos, xpos, m, d, s;
-		cin >> ypos >> xpos >> m >> d >> s;
-		vc.push_back({ ypos,xpos,m,d,s });
+		int ypos, xpos, m, s, d;
+		cin >> ypos >> xpos >> m >> s >> d;
+		vc.push_back({ ypos,xpos,m,s,d });
 		MAP[ypos][xpos]++;
 	}
 	while (K--) {

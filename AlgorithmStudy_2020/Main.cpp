@@ -1,4 +1,4 @@
-﻿#include "header/BOJ/삼성 SW 역량 테스트 기출 문제/마법사 상어와 파이어볼.h"
+﻿#include "header/BOJ/Contest/제5회 한양대학교 프로그래밍/팰린드롬 만들기.h"
 #include <iostream>
 using namespace std;
 
