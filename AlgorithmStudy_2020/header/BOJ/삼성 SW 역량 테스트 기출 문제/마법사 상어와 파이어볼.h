@@ -10,34 +10,41 @@ vector<fireBall> vc;
 int N, M, K;
 int MAP[MAX][MAX];
 pii dir[] = {
-	{1,0},
-	{1,1},
-	{0,1},
+	{-1,0}, 
 	{-1,1},
-	{-1,0},
-	{-1,-1},
-	{0,-1},
-	{1,-1}
+	{0,1},
+	{1,1},
+	{1,0},
+	{1,-1}, 
+	{0,-1}, 
+	{-1,-1} 
 };
 
 void move() {
 	for (int i = 0; i < vc.size(); i++) {
 		fireBall cur = vc[i];
 		MAP[cur.ypos][cur.xpos]--;
-		int curS = cur.speed, ny = cur.ypos, nx = cur.xpos;
+		int curS = cur.speed;
+		int ny = cur.ypos, nx = cur.xpos;
 		pii curD = dir[cur.d];
-		while (curS--) {
-			ny += curD.first, nx += curD.second;
-			bool isBreak = false;
-			if (!(1 <= ny && ny <= N)) {
-				ny -= curD.first;
-				isBreak = true;
-			}
-			if (!(1 <= nx && nx <= N)) {
-				nx -= curD.second;
-				isBreak = true;
-			}
-			if (isBreak) break;
+		ny += curD.first * cur.speed, nx += curD.second * cur.speed;
+		if (ny <= 0) {
+			ny *= -1;
+			ny %= N;
+			ny = N - ny;
+		}
+		else if (ny > N) {
+			ny %= N;
+			if (ny == 0) ny = N;
+		}
+		if (nx <= 0) {
+			nx *= -1;
+			nx %= N;
+			nx = N - nx;
+		}
+		else if (nx > N) {
+			nx %= N;
+			if (nx == 0) nx = N;
 		}
 		vc[i].ypos = ny, vc[i].xpos = nx;
 		MAP[ny][nx]++;
@@ -48,13 +55,14 @@ void check() {
 	for (int i = 1; i <= N; i++) for (int j = 1; j <= N; j++) {
 		if (MAP[i][j] <= 1) continue;
 		fireBall temp = { i,j,0,0,0 };
-		int prevDir = -1, cnt = MAP[i][j];
+		int prevDir = -1, cnt = 0;
 		bool isSameDir = true;
 		for (int k = 0; k < vc.size(); k++) {
 			if (!(vc[k].ypos == i && vc[k].xpos == j)) continue;
+			cnt++;
 			if (prevDir == -1) prevDir = vc[k].d % 2;
 			else prevDir == vc[k].d % 2 ? isSameDir = true : isSameDir = false;
-			temp.mass += vc[k].mass, temp.speed += vc[k].mass;
+			temp.mass += vc[k].mass, temp.speed += vc[k].speed;
 			vc.erase(vc.begin() + k);
 			k--;
 		}
@@ -80,7 +88,7 @@ void check() {
 					  temp.xpos ,
 					  temp.mass / 5,
 					  temp.speed / cnt,
-					  k * 2 });
+					  k * 2 + 1 });
 			}
 		}
 	}
@@ -104,6 +112,5 @@ void solution() {
 	while (K--) {
 		move();
 		check();
-	}
-	output();
+	}	output();
 }
