@@ -469,6 +469,10 @@
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\2번.h" />
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\3번.h" />
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\4번.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\블록 이동하기.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\오픈채팅방.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\후보키.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2020 KAKAO BLIND RECRUITMENT\괄호변환.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

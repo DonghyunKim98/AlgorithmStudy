@@ -1,7 +1,8 @@
-﻿#include "header/BOJ/삼성 SW 역량 테스트 기출 문제/마법사 상어와 파이어볼.h"
+﻿#include "header/Progrmmers/카카오 기출/2019 KAKAO BLIND RECRUITMENT/오픈채팅방.h"
 #include <iostream>
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	solution();
+	solution({"Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"
+});
 }
