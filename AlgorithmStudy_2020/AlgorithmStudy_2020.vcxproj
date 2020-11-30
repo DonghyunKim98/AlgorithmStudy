@@ -147,6 +147,13 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\균형잡힌 세상.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\나무 자르기.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\미로 탐색.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\새.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\세부.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\소수.h" />
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\저울.h" />
     <ClInclude Include="header\BOJ\BOJ 길라잡이\1, 2, 3 더하기.h" />
     <ClInclude Include="header\BOJ\BOJ 길라잡이\2xn 타일링.h" />
     <ClInclude Include="header\BOJ\BOJ 길라잡이\2xn 타일링2.h" />
@@ -469,10 +476,12 @@
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\2번.h" />
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\3번.h" />
     <ClInclude Include="header\Progrmmers\월간코드챌린지\9월\4번.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\블록 게임.h" />
     <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\블록 이동하기.h" />
     <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\오픈채팅방.h" />
     <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\후보키.h" />
     <ClInclude Include="header\Progrmmers\카카오 기출\2020 KAKAO BLIND RECRUITMENT\괄호변환.h" />
+    <ClInclude Include="header\Progrmmers\카카오 기출\2020 카카오 인턴쉽\동굴탐험.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

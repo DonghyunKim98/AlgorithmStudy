@@ -1012,5 +1012,32 @@
     <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\블록 이동하기.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="header\Progrmmers\카카오 기출\2020 카카오 인턴쉽\동굴탐험.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\Progrmmers\카카오 기출\2019 KAKAO BLIND RECRUITMENT\블록 게임.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\새.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\소수.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\저울.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\미로 탐색.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\세부.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\나무 자르기.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="header\BOJ\2020_2 Forif Algorithm\균형잡힌 세상.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
