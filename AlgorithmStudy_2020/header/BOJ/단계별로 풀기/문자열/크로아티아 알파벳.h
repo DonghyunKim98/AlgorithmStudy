@@ -1,13 +1,11 @@
 #include <bits/stdc++.h>
-//2941¹ø ¹®Á¦
-//http://melonicedlatte.com/algorithm/2018/07/11/234820.html Âü°í
+//2941ë²ˆ ë¬¸ì œ
+//http://melonicedlatte.com/algorithm/2018/07/11/234820.html 
 using namespace std;
 
-vector <string> vc = { "c=","c-","dz=","d-","lj","nj","s=","z=" };
-
-
-void Croatia() {
+void solution() {
 	string _string;
 	cin >> _string;
+	cout << _string;
 	int total = 0;
 }
