@@ -1,35 +1,43 @@
 #include <bits/stdc++.h>
-// 2805¹ø ¹®Á¦
+// 2805ë²ˆ ë¬¸ì œ
 using namespace std;
 typedef long long ll;
 int N, M;
 vector<ll> vc;
-void solution() {
-	ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+void solution()
+{
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 	cin >> N >> M;
 	ll MAX = 0;
-	for (int i = 0; i < N; i++) {
+	for (int i = 0; i < N; i++)
+	{
 		ll temp;
 		cin >> temp;
 		vc.push_back(temp);
 		MAX = max(MAX, temp);
 	}
 	ll begin = 0, end = MAX;
-	while (begin <= end) {
+	while (begin <= end)
+	{
 		ll mid = (begin + end) / 2;
 		ll wood = 0;
-		for (int i = 0; i < vc.size(); i++) {
-			if (vc[i] > mid) wood += vc[i] - mid;
+		for (int i = 0; i < vc.size(); i++)
+		{
+			if (vc[i] > mid)
+				wood += vc[i] - mid;
 		}
-		// ´õ Àß¶ó¾ßÇÔ => ³ôÀÌ°¡ ³·¾ÆÁ®¾ß ÇÔ
-		if (wood < M) {
+		// ë” ì˜ë¼ì•¼í•¨ => ë†’ì´ê°€ ë‚®ì•„ì ¸ì•¼ í•¨
+		if (wood < M)
+		{
 			end = mid - 1;
 		}
-		// ¸¹ÀÌ ÀÚ¸§ => ³ôÀÌ°¡ ³ô¾ÆÁ®¾ßÇÔ
-		else {
+		// ë§ì´ ìë¦„ => ë†’ì´ê°€ ë†’ì•„ì ¸ì•¼í•¨
+		else
+		{
 			begin = mid + 1;
 		}
 	}
 	cout << end;
-
 }
