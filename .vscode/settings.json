@@ -62,6 +62,11 @@
         "unordered_map": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "*.gitattributes": "cpp",
+        "random": "cpp"
+    },
+    "cSpell.words": [
+        "vpic"
+    ]
 }
