@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-// 13905¹ø ¹®Á¦
+// 13905ë²ˆ ë¬¸ì œ
 using namespace std;
 const int MAX = 300000 + 1;
 typedef pair<int, int> pii;
@@ -25,7 +25,7 @@ bool BFS(int mid)
 			int cost = u.second;
 			if (visited[nextNode])
 				continue;
-			// ÃÖ¼ÒÄ¡º¸´Ù ´õ ³ª°£´Ù¸é
+			// ìµœì†Œì¹˜ë³´ë‹¤ ë” ë‚˜ê°„ë‹¤ë©´
 			if (cost >= mid)
 			{
 				q.push(nextNode);
@@ -33,7 +33,7 @@ bool BFS(int mid)
 			}
 		}
 	}
-	// ¹ß°ßÇÏÁö ¸øÇßÀ¸¸é
+	// ë°œê²¬í•˜ì§€ ëª»í–ˆìœ¼ë©´
 	return false;
 }
 
@@ -45,7 +45,7 @@ void solution()
 	cin >> N >> M;
 	cin >> s >> e;
 	int MAX = 0;
-	// ¹«¹æÇâ °¡Áß ±×·¡ÇÁ Áı¾î³Ö±â
+	// ë¬´ë°©í–¥ ê°€ì¤‘ ê·¸ë˜í”„ ì§‘ì–´ë„£ê¸°
 	for (int i = 0; i < M; i++)
 	{
 		int node1, node2, weight;
@@ -60,7 +60,7 @@ void solution()
 	while (begin <= end)
 	{
 		int mid = (begin + end) / 2;
-		// mid °ªÀ» ÃÖ¼ÒÇÑÀ¸·Î »ï¾ÒÀ»¶§ Åë°ú°¡ µÇ¸é
+		// mid ê°’ì„ ìµœì†Œí•œìœ¼ë¡œ ì‚¼ì•˜ì„ë•Œ í†µê³¼ê°€ ë˜ë©´
 		if (BFS(mid))
 		{
 			ans = mid;
@@ -79,10 +79,10 @@ int parent[MAX];
 
 int find(int idx)
 {
-	// ÀÚ±â ÀÚ½ÅÀÌ ÃÖ»óÀ§ ³ëµå¶ó¸é ÀÚ±â ÀÚ½Å return
+	// ìê¸° ìì‹ ì´ ìµœìƒìœ„ ë…¸ë“œë¼ë©´ ìê¸° ìì‹  return
 	if (parent[idx] == idx)
 		return idx;
-	// ¾Æ´Ï¶ó¸é ÃÖ»óÀ§ ³ëµå¸¦ Ã£¾Æ¼­ return
+	// ì•„ë‹ˆë¼ë©´ ìµœìƒìœ„ ë…¸ë“œë¥¼ ì°¾ì•„ì„œ return
 	else
 		return parent[idx] = find(parent[idx]);
 }
@@ -92,7 +92,7 @@ bool cmp(vci &a, vci &b)
 	return a[2] > b[2];
 }
 
-// ½ºÆĞ´× Æ®¸®¸¦ ÀÌ¿ëÇÏ´Â ¹®Á¦
+// ìŠ¤íŒ¨ë‹ íŠ¸ë¦¬ë¥¼ ì´ìš©í•˜ëŠ” ë¬¸ì œ
 void solution2()
 {
 	ios::sync_with_stdio(0);
@@ -100,7 +100,7 @@ void solution2()
 	cout.tie(0);
 	cin >> N >> M;
 	cin >> s >> e;
-	// ¹«¹æÇâ °¡Áß ±×·¡ÇÁ Áı¾î³Ö±â
+	// ë¬´ë°©í–¥ ê°€ì¤‘ ê·¸ë˜í”„ ì§‘ì–´ë„£ê¸°
 	for (int i = 0; i < M; i++)
 	{
 		int node1, node2, weight;
@@ -108,10 +108,10 @@ void solution2()
 		vci temp = {node1, node2, weight};
 		adj2.push_back(temp);
 	}
-	// °¡ÁßÄ¡°¡ ³ôÀº ¼ø¼­´ë·Î Á¤·Ä
+	// ê°€ì¤‘ì¹˜ê°€ ë†’ì€ ìˆœì„œëŒ€ë¡œ ì •ë ¬
 	sort(adj2.begin(), adj2.end(), cmp);
 
-	// ÀÏ´Ü ÀÚ±âÀÚ½ÅÀÇ ºÎ¸ğ´Â ÀÚ±âÀÚ½Å
+	// ì¼ë‹¨ ìê¸°ìì‹ ì˜ ë¶€ëª¨ëŠ” ìê¸°ìì‹ 
 	for (int i = 1; i <= N; i++)
 		parent[i] = i;
 	int ans = 0;
@@ -121,12 +121,12 @@ void solution2()
 		int next = find(adj2[i][1]);
 		int cost = adj2[i][2];
 
-		// ¿¬°á ¿©ºÎ È®ÀÎ
+		// ì—°ê²° ì—¬ë¶€ í™•ì¸
 		if (current != next)
 		{
 			parent[next] = current;
-			// ¸¸¾à ÀÌ¹ø °É·Î start¿Í end°¡ ÀÌ¾îÁ³´Ù¸é
-			// ÀÌ¹ø cost°¡ ¿¬°áÁş´Â ÃÖÀú ÄÚ½ºÆ® (³»¸²Â÷¼øÀ¸·Î sortingÇß±â ¶§¹®)
+			// ë§Œì•½ ì´ë²ˆ ê±¸ë¡œ startì™€ endê°€ ì´ì–´ì¡Œë‹¤ë©´
+			// ì´ë²ˆ costê°€ ì—°ê²°ì§“ëŠ” ìµœì € ì½”ìŠ¤íŠ¸ (ë‚´ë¦¼ì°¨ìˆœìœ¼ë¡œ sortingí–ˆê¸° ë•Œë¬¸)
 			if (find(s) == find(e))
 			{
 				ans = cost;
@@ -138,7 +138,7 @@ void solution2()
 }
 
 vector<pii> MST[MAX];
-// ½ºÆĞ´× Æ®¸® + BFS
+// ìŠ¤íŒ¨ë‹ íŠ¸ë¦¬ + BFS
 void solution3()
 {
 	ios::sync_with_stdio(0);
@@ -146,7 +146,7 @@ void solution3()
 	cout.tie(0);
 	cin >> N >> M;
 	cin >> s >> e;
-	// ¹«¹æÇâ °¡Áß ±×·¡ÇÁ Áı¾î³Ö±â
+	// ë¬´ë°©í–¥ ê°€ì¤‘ ê·¸ë˜í”„ ì§‘ì–´ë„£ê¸°
 	for (int i = 0; i < M; i++)
 	{
 		int node1, node2, weight;
@@ -154,10 +154,10 @@ void solution3()
 		vci temp = {node1, node2, weight};
 		adj2.push_back(temp);
 	}
-	// °¡ÁßÄ¡°¡ ³ôÀº ¼ø¼­´ë·Î Á¤·Ä
+	// ê°€ì¤‘ì¹˜ê°€ ë†’ì€ ìˆœì„œëŒ€ë¡œ ì •ë ¬
 	sort(adj2.begin(), adj2.end(), cmp);
 
-	// ÀÏ´Ü ÀÚ±âÀÚ½ÅÀÇ ºÎ¸ğ´Â ÀÚ±âÀÚ½Å
+	// ì¼ë‹¨ ìê¸°ìì‹ ì˜ ë¶€ëª¨ëŠ” ìê¸°ìì‹ 
 	for (int i = 1; i <= M; i++)
 		parent[i] = i;
 
@@ -167,7 +167,7 @@ void solution3()
 		int next = find(adj2[i][1]);
 		int cost = adj2[i][2];
 
-		// ¿¬°á ¿©ºÎ È®ÀÎ
+		// ì—°ê²° ì—¬ë¶€ í™•ì¸
 		if (current != next)
 		{
 			parent[next] = current;
@@ -176,7 +176,7 @@ void solution3()
 		}
 	}
 
-	// ½ºÆĞ´× Æ®¸® Å½»ö
+	// ìŠ¤íŒ¨ë‹ íŠ¸ë¦¬ íƒìƒ‰
 	queue<pii> q;
 	memset(visited, 0, sizeof(visited));
 	q.push({s, INT_MAX});
@@ -203,18 +203,18 @@ void solution3()
 	cout << ans;
 }
 /*
-	ÀÏ´Ü ¶°¿À¸¥ »ı°¢
-	1. Maximum Spanning Tree¸¦ ¸¸µç´Ù??
-		=> Å©·ç½ºÄ® ¾Ë°í¸®ÁòÀ» ¿ªÀÌ¿ëÇØ¼­?
-	2. BFS·Î Å½¹æÀ» ÇÏ´Âµ¥, ¹«Á¶°Ç ´õ Å©°Ô Å½¹æÀ» ÇØ¾ßÇÔ
-		=> ±Ùµ¥ ÀÌ·¯¸é ºùºùµ¹ÅÙµ¥
-		=> »çÀÌÅ¬À» Çü¼ºÇÏÁö ¾Ê´Â ¼±¿¡¼­ µ¹¾Æ¾ßÇÔ
-	´Ù ¾ÈµÊ
-	=> ±×·¯¸é BFS + ÀÌºĞÅ½»ö logicÀº °¡´ÉÇÒ·Á³ª
+	ì¼ë‹¨ ë– ì˜¤ë¥¸ ìƒê°
+	1. Maximum Spanning Treeë¥¼ ë§Œë“ ë‹¤??
+		=> í¬ë£¨ìŠ¤ì¹¼ ì•Œê³ ë¦¬ì¦˜ì„ ì—­ì´ìš©í•´ì„œ?
+	2. BFSë¡œ íƒë°©ì„ í•˜ëŠ”ë°, ë¬´ì¡°ê±´ ë” í¬ê²Œ íƒë°©ì„ í•´ì•¼í•¨
+		=> ê·¼ë° ì´ëŸ¬ë©´ ë¹™ë¹™ëŒí…ë°
+		=> ì‚¬ì´í´ì„ í˜•ì„±í•˜ì§€ ì•ŠëŠ” ì„ ì—ì„œ ëŒì•„ì•¼í•¨
+	ë‹¤ ì•ˆë¨
+	=> ê·¸ëŸ¬ë©´ BFS + ì´ë¶„íƒìƒ‰ logicì€ ê°€ëŠ¥í• ë ¤ë‚˜
 
 
-	°á±¹ solution 3°¡Áö
+	ê²°êµ­ solution 3ê°€ì§€
 	1) Parmetric Search + BFS
-	2) MST ÀÀ¿ë
+	2) MST ì‘ìš©
 	3) MST + BFS
 */
