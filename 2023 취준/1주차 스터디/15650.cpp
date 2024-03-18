@@ -1,5 +1,6 @@
-// N 과 M (1)
+// N 과 M (2)
 #include <bits/stdc++.h>
+
 #define endl "\n"
 #define MAX 9
 
@@ -9,10 +10,8 @@ int N, M;
 vector<int> adj;
 bool visited[MAX];
 
-// k -> Depth 를 의미하는 변수
-void dfs(int k)
+void DFS(int k)
 {
-    // 재귀 DFS 에서 반드시 필요한 것. 탈출문이 필요하다. (끝까지 탐색한 경우)
     if (k == M)
     {
         for (auto u : adj)
@@ -24,13 +23,14 @@ void dfs(int k)
     }
     for (int i = 1; i <= N; i++)
     {
+        // 핵심 -> 마지막 원소보다 반드시 크게 만들면 됨!!! (오름차순을 구현한 것)
+        if (!adj.empty() && adj.back() > i)
+            continue;
         if (!visited[i])
         {
-            // 유망하니깐 탐색
             visited[i] = true;
             adj.push_back(i);
-            dfs(k + 1);
-            // 탐색이 끝난후에는 Back-Tracking
+            DFS(k + 1);
             visited[i] = false;
             adj.pop_back();
         }
@@ -45,13 +45,12 @@ int main()
 
     cin >> N >> M;
 
-    dfs(0);
+    DFS(0);
 
     return 0;
 }
 
 /*
-    기본적인 백트래킹. 코드 꼴에 익숙해져야 한다. - 순열 문제.
-    (1) #define 을 사용하는 부분
-    (2) auto 구문
+    조합 문제
+    (1) 순열 + 오름차순을 구현하면 된다. (진짜 조합으로 생각 안해도 된다.)
 */
