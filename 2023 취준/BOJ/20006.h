@@ -7,7 +7,7 @@ void solution()
 {
     int p, m;
     cin >> p >> m;
-    vector<pair<string, int> > pq[310];
+    vector<pair<string, int>> pq[310];
     // 우선 순위 첫번째 string 값만을 비교하면 되니 greater로 만들었습니다.
 
     for (int i = 0; i < p; i++)
