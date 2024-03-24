@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+// 단지 번호 붙이기
 
 #define endl '\n'
 #define MAX 25
