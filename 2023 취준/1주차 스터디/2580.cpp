@@ -6,6 +6,7 @@
 using namespace std;
 
 int board[MAX][MAX];
+vector<pair<int, int>> vc;
 
 bool check(int x, int y, int k)
 {
