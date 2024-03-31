@@ -1,0 +1,1 @@
+{"name":"Local: 적록색약","url":"/Users/donghyun/Desktop/Dev/study/AlgorithmStudy/2023 취준/2주차 스터디/적록색약.cpp","tests":[{"id":1711889231374,"input":"5\nRRRBB\nGGBBB\nBBBRR\nBBRRR\nRRRRR","output":"4 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/donghyun/Desktop/Dev/study/AlgorithmStudy/2023 취준/2주차 스터디/적록색약.cpp","group":"local","local":true}
