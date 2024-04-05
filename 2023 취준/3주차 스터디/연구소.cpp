@@ -78,17 +78,14 @@ void chose_DFS(int n, int k)
         return;
     }
 
-    for (int startX = 0; startX < N; startX++)
+    for (int q = n; q < N * M; q++)
     {
-        for (int startY = 0; startY < M; startY++)
+        int startX = q / M, startY = q % M;
+        if (!board[startX][startY])
         {
-
-            if (!board[startX][startY])
-            {
-                board[startX][startY] = 1;
-                chose_DFS(startX * M + startY, k + 1);
-                board[startX][startY] = 0;
-            }
+            board[startX][startY] = 1;
+            chose_DFS(q + 1, k + 1);
+            board[startX][startY] = 0;
         }
     }
 }
@@ -117,7 +114,7 @@ int main()
             if (!board[i][j])
             {
                 board[i][j] = 1;
-                chose_DFS(i * N + j, 1);
+                chose_DFS(i * M + j + 1, 1);
                 board[i][j] = 0;
             }
         }
@@ -128,5 +125,5 @@ int main()
 
 /*
     실수 1번 : N 과 M 인데, 아무 생각없이 스도쿠 처럼 N*N 이라 착각해버린 것
-    해야할 것 : 이거 그대로 해도 되는거 맞나?
+    실수 2번 : 으아아아아아아 계속 헛 돌았다. 결국 N 과 M 을 계속 착각했엉,,
 */
