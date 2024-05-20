@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
-//2110¹ø ¹®Á¦
+// 2110ë²ˆ ë¬¸ì œ
 using namespace std;
 
-void RouterInstall() {
+void RouterInstall()
+{
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
@@ -14,44 +15,49 @@ void RouterInstall() {
 		cin >> vc.at(i);
 	sort(vc.begin(), vc.end());
 
-	//°¡´ÉÇÑ ÃÖ¼Ò°Å¸® -> 1
-	//°¡´ÉÇÑ ÃÖ´ë°Å¸® -> ¸¶Áö¸·°ú Ã¹Áý»çÀÌÀÇ °Å¸®
+	// ê°€ëŠ¥í•œ ìµœì†Œê±°ë¦¬ -> 1
+	// ê°€ëŠ¥í•œ ìµœëŒ€ê±°ë¦¬ -> ë§ˆì§€ë§‰ê³¼ ì²«ì§‘ì‚¬ì´ì˜ ê±°ë¦¬
 	int begin = 1, end = vc.at(vc.size() - 1) - vc.at(0);
-	while (begin <= end) {
-		//gap ¼³Á¤ -> Áý°ú Áý »çÀÌÀÇ °Å¸®°¡ ÀÌ gapº¸´Ù ¸Ö¸é ¼³Ä¡! ¾È ¸Ö¸é ¼³Ä¡ x
+	while (begin <= end)
+	{
+		// gap ì„¤ì • -> ì§‘ê³¼ ì§‘ ì‚¬ì´ì˜ ê±°ë¦¬ê°€ ì´ gapë³´ë‹¤ ë©€ë©´ ì„¤ì¹˜! ì•ˆ ë©€ë©´ ì„¤ì¹˜ x
 		int gap = (begin + end) / 2;
-		//ÀÏ´Ü vc[0]¿¡ ¹«Á¶°Ç ¼³Ä¡ÇÏ°í °¡±â ¶§¹®¿¡ cnt´Â 1À» ¼³Á¤ÇØ¾ßÇÔ.
+		// ì¼ë‹¨ vc[0]ì— ë¬´ì¡°ê±´ ì„¤ì¹˜í•˜ê³  ê°€ê¸° ë•Œë¬¸ì— cntëŠ” 1ì„ ì„¤ì •í•´ì•¼í•¨.
 		int cnt = 1;
-		//cnt°¡ °»½ÅµÆ´Ù´Â °ÍÀº °øÀ¯±â¸¦ ¼³Ä¡Çß´Ù´Â °Í. ±×·¯¸é ±× ÁýÀ¸·Î ºÎÅÍ »õ·Ó°Ô °£°ÝÀ» ÃøÁ¤ÇØ¾ß ÇÏ¹Ç·Î
-		//std º¯¼ö¸¦ ÃøÁ¤ÇØÁØ´Ù.
+		// cntê°€ ê°±ì‹ ëë‹¤ëŠ” ê²ƒì€ ê³µìœ ê¸°ë¥¼ ì„¤ì¹˜í–ˆë‹¤ëŠ” ê²ƒ. ê·¸ëŸ¬ë©´ ê·¸ ì§‘ìœ¼ë¡œ ë¶€í„° ìƒˆë¡­ê²Œ ê°„ê²©ì„ ì¸¡ì •í•´ì•¼ í•˜ë¯€ë¡œ
+		// std ë³€ìˆ˜ë¥¼ ì¸¡ì •í•´ì¤€ë‹¤.
 		int std = vc.at(0);
-		
-		for (int i = 1; i < N; i++) {
-			if (vc.at(i) - std >= gap) {
+
+		for (int i = 1; i < N; i++)
+		{
+			if (vc.at(i) - std >= gap)
+			{
 				cnt++;
 				std = vc.at(i);
 			}
 		}
 
-		if (cnt >= C) begin = gap + 1;
-		else end = gap - 1;
+		if (cnt >= C)
+			begin = gap + 1;
+		else
+			end = gap - 1;
 	}
 	cout << end;
 }
 
 /*
-	Brutal force => Á¶ÇÕ. O(n!)
+	Brutal force => ì¡°í•©. O(n!)
 
-	¾Ë°í¸®Áò ¾ÆÀÌµð¾î
-	=> °á±¹ Áý°ú Áý»çÀÌÀÇ '°£°Ý' ¿¡ ÃÊÁ¡À» ¸ÂÃç¾ß ÇÏ´Â °Í.
-	=> ÀÌ °£°ÝÀ» parameter search·Î Ã£¾Æ°¡¸é¼­ ¹®Á¦ÀÇ Á¶°Ç¿¡ ºÎÇÕÇÏ´ÂÁö¸¦ È®ÀÎ.
-	(Àû¾îµµ ÀÌ °£°ÝÀ» À¯ÁöÇÏ¸é¼­ ¿øÇÏ´Â °øÀ¯±âÀÇ °³¼ö¸¸Å­ ¼³Ä¡ÇÒ ¼ö ÀÖ´Â°¡?)
+	ì•Œê³ ë¦¬ì¦˜ ì•„ì´ë””ì–´
+	=> ê²°êµ­ ì§‘ê³¼ ì§‘ì‚¬ì´ì˜ 'ê°„ê²©' ì— ì´ˆì ì„ ë§žì¶°ì•¼ í•˜ëŠ” ê²ƒ.
+	=> ì´ ê°„ê²©ì„ parameter searchë¡œ ì°¾ì•„ê°€ë©´ì„œ ë¬¸ì œì˜ ì¡°ê±´ì— ë¶€í•©í•˜ëŠ”ì§€ë¥¼ í™•ì¸.
+	(ì ì–´ë„ ì´ ê°„ê²©ì„ ìœ ì§€í•˜ë©´ì„œ ì›í•˜ëŠ” ê³µìœ ê¸°ì˜ ê°œìˆ˜ë§Œí¼ ì„¤ì¹˜í•  ìˆ˜ ìžˆëŠ”ê°€?)
 
-	³»°¡ ÇÑ ½Ç¼ö
-	1) ÀÏ´Ü Áý°ú Áý»çÀÌÀÇ °£°ÝÀ» ÀÏÀÏÀÌ ¾Ë¾Æ³¾·Á°í ÇÔ. ±×·¯´Ï±ñ ÁýÀÌ
-	[1,2,4,8,9] °¡ ÀÖÀ»¶§ Áý°ú Áý»çÀÌÀÇ °£°ÝÀÎ [1,2,4,1] ¸¦ ¾Ë¾Æ³»°í ÀÌ°Å¸¦ ÀÌ¿ëÇÏ·Á Çß´Ù´Â Á¡ÀÌ ¹®Á¦¸¦ ¾î·Æ°Ô ¸¸µê
-	³»°¡ °£°Ý ÀÚÃ¼¸¦ ¼³Á¤ÇÏ°í ¼³Á¤ÇÑ °£°Ýº¸´Ù ³ÐÀ¸¸é count¸¦ ´Ã¸®°í Á¼À¸¸é count¸¦ ´Ã¸®Áö ¾Ê´Â ¹æ½Ä.
-	³»°¡ ¿Ö Ã³À½¿¡ Áý°ú Áý»çÀÌÀÇ °£°ÝÀ» ¾Ë¾Æ³»¼­ º¯¼ö·Î »ïÀ¸·Á Çß´Â°¡?
-	=> °øÀ¯±âÀÇ °³¼ö¸¦ Ã³À½ºÎÅÍ ÀÌ¿ëÇÒ·Á°í Çß±â ¶§¹® Áï C´ë ¼³Ä¡ ÇØ¾ß ÇÏ´Â °ÍÀ» Ã³À½ºÎÅÍ ½Å°æ›§±â ¶§¹®ÀÌ´Ù.
-	2) cnt¸¦ Ã³À½¿¡ 1·Î ¼³Á¤ÇÏ´Â °Í. ¸Ç Ã³À½ÁýÀº ¹«Á¶°Ç ¼³Ä¡ÇÒ °ÍÀÌ±â ¶§¹®!
+	ë‚´ê°€ í•œ ì‹¤ìˆ˜
+	1) ì¼ë‹¨ ì§‘ê³¼ ì§‘ì‚¬ì´ì˜ ê°„ê²©ì„ ì¼ì¼ì´ ì•Œì•„ë‚¼ë ¤ê³  í•¨. ê·¸ëŸ¬ë‹ˆê¹ ì§‘ì´
+	[1,2,4,8,9] ê°€ ìžˆì„ë•Œ ì§‘ê³¼ ì§‘ì‚¬ì´ì˜ ê°„ê²©ì¸ [1,2,4,1] ë¥¼ ì•Œì•„ë‚´ê³  ì´ê±°ë¥¼ ì´ìš©í•˜ë ¤ í–ˆë‹¤ëŠ” ì ì´ ë¬¸ì œë¥¼ ì–´ë µê²Œ ë§Œë“¦
+	ë‚´ê°€ ê°„ê²© ìžì²´ë¥¼ ì„¤ì •í•˜ê³  ì„¤ì •í•œ ê°„ê²©ë³´ë‹¤ ë„“ìœ¼ë©´ countë¥¼ ëŠ˜ë¦¬ê³  ì¢ìœ¼ë©´ countë¥¼ ëŠ˜ë¦¬ì§€ ì•ŠëŠ” ë°©ì‹.
+	ë‚´ê°€ ì™œ ì²˜ìŒì— ì§‘ê³¼ ì§‘ì‚¬ì´ì˜ ê°„ê²©ì„ ì•Œì•„ë‚´ì„œ ë³€ìˆ˜ë¡œ ì‚¼ìœ¼ë ¤ í–ˆëŠ”ê°€?
+	=> ê³µìœ ê¸°ì˜ ê°œìˆ˜ë¥¼ ì²˜ìŒë¶€í„° ì´ìš©í• ë ¤ê³  í–ˆê¸° ë•Œë¬¸ ì¦‰ CëŒ€ ì„¤ì¹˜ í•´ì•¼ í•˜ëŠ” ê²ƒì„ ì²˜ìŒë¶€í„° ì‹ ê²½Â›ãŽŸ ë•Œë¬¸ì´ë‹¤.
+	2) cntë¥¼ ì²˜ìŒì— 1ë¡œ ì„¤ì •í•˜ëŠ” ê²ƒ. ë§¨ ì²˜ìŒì§‘ì€ ë¬´ì¡°ê±´ ì„¤ì¹˜í•  ê²ƒì´ê¸° ë•Œë¬¸!
 */
