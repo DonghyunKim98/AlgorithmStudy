@@ -27,17 +27,17 @@ int main()
     // min 보다 작다고 생각하면 안됨 -> min 보다 크게 해서 몇몇 랜선 자체를 안 쓸수도 있음
     while (begin <= end)
     {
-        ll k = (begin + end) / 2;
+        ll mid = (begin + end) / 2;
         ll cnt = 0;
         for (int i = 0; i < vc.size(); i++)
         {
-            cnt += vc[i] / k;
+            cnt += vc[i] / mid;
         }
 
         if (cnt >= N)
-            begin = k + 1;
+            begin = mid + 1;
         else
-            end = k - 1;
+            end = mid - 1;
     }
 
     cout << end;
