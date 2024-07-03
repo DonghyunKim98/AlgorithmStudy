@@ -1,46 +1,28 @@
-from collections import defaultdict
 from itertools import combinations
 
 
-names = ["김동현", "윤용성", "강무성", "박진우", "임정민"]
-problems = [15649, 15650, 15651, 15652, 9663, 2580, 1260, 2667, 2468, 7576]
-min_problems = len(problems) // len(names)
+def get_kth_string_and_second_B_position(N, K):
+    positions = list(combinations(range(N), 2))
+    sorted_positions = sorted(positions)
 
-# 문제를 공평하게 분배하기 위해 문제 수를 최대한 균등하게 분배
+    # K번째 조합을 찾는다
+    b1, b2 = sorted_positions[K-1]
 
+    # K번째 문자열을 생성
+    string = ['A'] * N
+    string[b1] = 'B'
+    string[b2] = 'B'
 
-def distribute_problems(names, problems):
-    problem_distribution = defaultdict(list)
-    remaining_problems = len(problems) % len(names)
+    # 두 번째 B의 위치 찾기
+    second_B_position = b2 + 1
 
-    for i, name in enumerate(names):
-        problem_distribution[name] = problems[i *
-                                              min_problems:(i+1)*min_problems]
-
-        if remaining_problems > 0:
-            problem_distribution[name].append(problems[-remaining_problems])
-            remaining_problems -= 1
-
-    return problem_distribution
-
-# 각 문제가 최소 2명 이상에게 분배되도록 조합을 구함
+    return ''.join(string), second_B_position
 
 
-def distribute_problems_fairly(problem_distribution):
-    for problem in problems:
-        assigned_people = [
-            name for name, problems in problem_distribution.items() if problem in problems]
-        if len(assigned_people) < 2:
-            for name in names:
-                if name not in assigned_people and len(problem_distribution[name]) < min_problems + 1:
-                    problem_distribution[name].append(problem)
-                    break
+# 주어진 값으로 실행
+N = 10
+K = 24
+kth_string, second_B_position = get_kth_string_and_second_B_position(N, K)
+password_corrected = bin(second_B_position)[2:]
 
-    return problem_distribution
-
-
-problem_distribution = distribute_problems(names, problems)
-fair_problem_distribution = distribute_problems_fairly(problem_distribution)
-
-for name, problems in fair_problem_distribution.items():
-    print(f"{name}: {problems}")
+print(kth_string, second_B_position, password_corrected)
