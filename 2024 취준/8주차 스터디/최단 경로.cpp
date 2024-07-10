@@ -16,7 +16,7 @@ int main()
     cin >> K;
 
     // 정점 번호 0번이 아닌 1번부터 시작한다는 것을 항상 명심
-    for (int i = 1; i < E; i++)
+    for (int i = 1; i <= E; i++)
     {
         int source, destination, cost;
         cin >> source >> destination >> cost;
