@@ -80,3 +80,7 @@ int main()
 
     return 0;
 }
+
+/*
+    index 만으로 관리하는 것
+*/
